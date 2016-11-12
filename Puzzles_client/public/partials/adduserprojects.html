@@ -1,0 +1,45 @@
+<div class="usereditPage">
+  <header class="row header">
+    <div class="small-12 small-centered header_content">
+      <div class="small-6 large-10 columns header_content_text title"><a class="a-title" href = "#/">Puzzles</a></div>
+      <div class="small-6 large-2 columns header_content_text other_info">  
+        <div class="small-12 columns"><button class="hollow button" ng-click="logout()">Log Out</button></div>
+      </div>
+    </div>
+  </header>
+  <div class="large-12 editintro">
+    <div class="row heading text-center">Project</div>
+    <div class="row form">
+      <form name = "myform"  novalidate>
+        <fieldset data-ng-repeat="choice in projectChoices">
+          <!-- Name -->
+          Name:<font color="red">*</font>
+          <input type="text" name="name" 
+                placeholder="Name"
+                ng-model="choice.name">
+
+          Description<font color="red">*</font>
+          <input type="text" name="description" 
+                placeholder="Description"
+                ng-model="choice.description">
+
+          Github
+          <input type="text" name="github" 
+                placeholder="Github URL"
+                ng-model="choice.github">
+
+          <br></br>
+        </fieldset>
+        <div class="small-12 large-12 columns buttonsbox"><button class="button success" ng-click="addNewChoiceProject()">Add Project</button>
+        </div>
+        <br>
+        
+        <div class="small-12 large-8 small-centered buttons">
+          <div class="small-12 large-6 columns buttonsbox"><a ng-click="discardData()" class="button alert">Discard Changes</a></div>
+          <div class="small-12 large-6 columns buttonsbox"><button type="submit"  ng-click="registerProjects()" class="button success">Submit</button></div>
+        </div>
+        <div class="small-12 text-center"><font color="green">{{message}}</font></div>
+      </form>
+    </div>
+  </div>
+</div>
