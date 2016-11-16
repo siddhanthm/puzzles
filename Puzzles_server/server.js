@@ -52,8 +52,6 @@ homeRoute.get(function(req, res) {
 
 
 var userRoute = router.route('/users');
-<<<<<<< 11e633d9b88b7295eca77c9f0a4cd36ad1103bde
-=======
 
 userRoute.get(function(req, res){
   TempUser.find(function(err, users){
@@ -79,7 +77,6 @@ userRoute.post(function(req, res){
   );
 });
 
->>>>>>> Week 2
 
 var userRouteId = router.route('/users/:id');
 userRouteId.get(function(req, res){
