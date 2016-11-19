@@ -1,0 +1,38 @@
+<div class="loginPage">
+        <header class="row header">
+                <div class="small-12 small-centered header_content">
+                        <div class="small-6 large-8 columns header_content_text title"><a href="#/">Puzzles</a></div>
+
+                        <div class="small-6 large-3 columns header_content_text other_info">    
+                                <div class="small-6 columns"><a href="#/signup" class="button">Join</a></div>
+                                <div class="small-6 columns"><a href="#/login"><button class="hollow button">Log In</button></a></div>
+                        </div>
+                </div>
+        </header>
+	<div class = "outer_box text-center large-4">
+		<div class="row text-left">
+			<form name="myform" nonvalidate>
+				<fieldset>
+					Username<font color="red">*</font>
+					<input type="text" name="username" 
+        				placeholder="Username"
+        				ng-model="username"
+        				ng-required="true">
+        			<p class="error validationerror text-center" ng-show="myform.username.$invalid && myform.username.$touched">
+        				Please enter a username.
+        			</p>
+        			Password<font color="red">*</font>
+					<input type="password" name="password"
+        				placeholder="Password" 
+        				ng-model="password"
+        				ng-required="true">
+        			<p class="error validationerror text-center" ng-show="myform.password.$invalid && myform.password.$touched">
+        				Enter a valid password.
+        			</p>
+				</fieldset>
+                                <font color="red">{{err}}</font>
+				<a type="submit login-btn" class="button" ng-click="login()">Login</a>
+			</form>
+		</div>
+	</div>
+</div>

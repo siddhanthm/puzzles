@@ -1,0 +1,48 @@
+<div class="signupPage">
+        <header class="row header">
+                <div class="small-12 small-centered header_content">
+                        <div class="small-6 large-8 columns header_content_text title"><a href="#/">Puzzles</a></div>
+
+                        <div class="small-6 large-3 columns header_content_text other_info">    
+                                <div class="small-6 columns"><a href="#/signup" class="button">Join</a></div>
+                                <div class="small-6 columns"><a href="#/login"><button class="hollow button">Log In</button></a></div>
+                        </div>
+                </div>
+        </header>
+	<div class = "outer_box text-center large-4">
+		<div class="row text-left">
+			<form name="myform2" nonvalidate>
+				<fieldset>
+					Username<font color="red">*</font>
+					<input type="text" name="username" 
+        				placeholder="Username"
+        				ng-model="username"
+        				ng-required="true">
+        			<p class="error validationerror text-center" ng-show="myform2.username.$invalid && myform2.username.$touched">
+        				Please enter a username.
+        			</p>
+        			Email<font color="red">*</font>
+					<input type="email" name="email" 
+        				placeholder="Email"
+        				ng-model="email"
+        				ng-required="true">
+        			<p class="error validationerror text-center" ng-show="myform2.email.$invalid && myform2.email.$touched">
+        				Please enter a email.
+        			</p>
+        			Password<font color="red">*</font>
+					<input type="password" name="password"
+        				placeholder="Password" 
+        				ng-model="password"
+        				ng-required="true"
+                                        ng-minlength="6">
+                                <p class="help-text" id="passwordHelpText">Your password must have at least 6 characters.</p>
+        			<p class="error validationerror text-center" ng-show="myform2.password.$invalid && myform2.password.$touched">
+        				Enter a valid password(minmum 6 characters).
+        			</p>
+                                <font color="red">{{ msg }}</font>
+                                <a class="button sign-up" type="submit">Create</a>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>

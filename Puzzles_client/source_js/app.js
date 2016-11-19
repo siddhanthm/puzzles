@@ -6,61 +6,39 @@ app.config(['$routeProvider', function($routeProvider) {
     templateUrl: './partials/home.html',
     controller: 'homeCtrl'
   }).
-  when('/portfolio', {
-    templateUrl: './partials/portfolio.html',
-    controller: 'portfolioCtrl'
-<<<<<<< 11e633d9b88b7295eca77c9f0a4cd36ad1103bde
-  }).
-  when('/home', {
+  when('/portfolio/:id', {
     templateUrl: './partials/portfolio.html',
     controller: 'portfolioCtrl'
   }).
-  when('/about', {
-    templateUrl: './partials/portfolio.html',
-    controller: 'portfolioCtrl'
+  when('/signup', {
+     templateUrl: './partials/signup.html',
+     controller: 'signUpCtrl'
   }).
-  when('/exp', {
-    templateUrl: './partials/portfolio.html',
-    controller: 'portfolioCtrl'
+  when('/login', {
+      templateUrl: './partials/login.html',
+      controller: 'loginCtrl'
   }).
-  when('/project', {
-    templateUrl: './partials/portfolio.html',
-    controller: 'portfolioCtrl'
-  }).
-  otherwise({
-=======
-  }).when('/home', {
-     templateUrl: './partials/portfolio.html',
-     controller: 'portfolioCtrl'
-   }).
-  when('/about', {
-     templateUrl: './partials/portfolio.html',
-     controller: 'portfolioCtrl'
-   }).
-   when('/exp', {
-     templateUrl: './partials/portfolio.html',
-     controller: 'portfolioCtrl'
-   }).
-   when('/project', {
-     templateUrl: './partials/portfolio.html',
-     controller: 'portfolioCtrl'
-   }).
   when('/add/basic', {
     templateUrl: './partials/adduserbasic.html',
     controller: 'addUserCtrl'
-  }).when('/add/education', {
+  }).
+  when('/add/education', {
     templateUrl: './partials/addusereducation.html',
     controller: 'addUserCtrl'
-  })
-  .when('/add/internship', {
+  }).
+  when('/add/internship', {
     templateUrl: './partials/adduserinternship.html',
     controller: 'addUserCtrl'
-  }).when('/add/projects', {
+  }).
+  when('/add/projects', {
     templateUrl: './partials/adduserprojects.html',
     controller: 'addUserCtrl'
   }).
-    otherwise({
->>>>>>> Week 2
+  when('/baduser', {
+    templateUrl: './partials/baduser.html',
+    controller: 'portfolioCtrl'
+  }).
+  otherwise({
     redirectTo: '/'
   });
 }]);

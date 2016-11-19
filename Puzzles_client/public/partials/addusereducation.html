@@ -2,9 +2,6 @@
     <header class="row header">
     <div class="small-12 small-centered header_content">
       <div class="small-6 large-10 columns header_content_text title"><a class="a-title" href = "#/">Puzzles</a></div>
-      <div class="small-6 large-2 columns header_content_text other_info">  
-        <div class="small-12 columns"><button class="hollow button" ng-click="logout()">Log Out</button></div>
-      </div>
     </div>
   </header>
   <div class="large-12 editintro">
@@ -26,12 +23,12 @@
           <input type="text" name="major" 
                 placeholder="Major"
                 ng-model="major"
-                >
+                ng-required="true">
           <p class="error validationerror text-center" ng-show="myform.major.$invalid && myform.major.$touched">
           Please enter a valid major.
           </p>
           <!-- CGPA -->
-          CGPA:
+          CGPA:<font color="red">*</font>
           <input type="text" name="cgpa" 
                 placeholder="CGPA"
                 ng-model="cgpa"
@@ -65,7 +62,7 @@
           <input type="text" name="courses" 
                 placeholder="Add courses in comma seperated values"
                 ng-model="courses"
-                >
+                ng-required="true">
           <p class="error validationerror text-center" ng-show="myform.courses.$invalid && myform.courses.$touched">
           Please enter valid courses.
           </p>
@@ -77,7 +74,7 @@
           <div class="small-12 large-6 columns buttonsbox"><a ng-click="discardData()" class="button alert">Discard Changes</a></div>
           <div class="small-12 large-6 columns buttonsbox"><button type="submit" class="button success">Next</button></div>
         </div>
-        <div class="small-12 text-center"><font color="green">{{message}}</font></div>
+        <div class="small-12 text-center"><font color="red">{{message}}</font></div>
       </form>
     </div>
     <br><br><br><br><br><br>

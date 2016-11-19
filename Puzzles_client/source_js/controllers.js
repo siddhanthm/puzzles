@@ -1,43 +1,145 @@
 var puzzleControllers = angular.module('puzzleControllers', ['720kb.datepicker']);
 
-<<<<<<< 11e633d9b88b7295eca77c9f0a4cd36ad1103bde
-puzzleControllers.controller('homeCtrl', ['$scope', '$http',  '$window' ,'$location','$anchorScroll' ,function($scope, $http,  $window,$location,$anchorScroll) {
-	console.log("Do nothing");
+var localData = {};
+var userData = {};
+var baseURL = "http://localhost:3000/api/users";
+var passwordURL = "http://localhost:3000/api/password";
+var loggedInUser = "";
+
+puzzleControllers.controller('homeCtrl', ['$scope', '$http',  '$window' ,'$location' ,function($scope, $http,$window,$location) {
+	/**
+	*Checks if the user is logged in or not and displays the home buttons accordingly.
+	*/
+	if(loggedInUser == ""){
+		$scope.msg1 = "Join";
+		$scope.msg2 = "Log In";
+	}
+	else {
+		$scope.msg1 = "View Profile";
+		$scope.msg2 = "Logout";
+	}
+
+	/**
+	*Checks if the user is logged in or not and decides the path accordingly.
+	*/
+	$scope.decidePath1 = function(){
+		if($scope.msg1 == "Join")
+			$location.path("/signup");
+		else if($scope.msg1 == "View Profile")
+			$location.path("/portfolio/" + loggedInUser);
+	}
+	$scope.decidePath2 = function(){
+		if($scope.msg2 == "Log In")
+			$location.path("/login");
+		else if($scope.msg2 == "Logout")
+			$location.path("/portfolio/" + loggedInUser);
+	}
+}]);
+puzzleControllers.controller('loginCtrl', ['$scope', '$http',  '$window' ,'$location' ,function($scope, $http,$window,$location) {
+	/**
+	*Checks if the username/password combination exist or not and proceeds accordingly.
+	*/
+	$scope.login = function(){
+		var whereQuery = "?where={'username':'" + $scope.username + "'}";
+		var selectQuery = '&&select={_id:1}';
+		var urlToGet = baseURL + whereQuery + selectQuery;
+		$http.get(urlToGet).success(function(apiData){
+			if(apiData.data.length == 0){
+				$scope.err = "Username/Password doesn't exist!";
+			}else{
+				var data2send = {
+					"id":apiData.data[0]._id,
+					"password": $scope.password
+				}
+				$http({
+					method  : 'POST',
+					url     : passwordURL,
+					data    : $.param(data2send), 
+					headers : {'Content-Type': 'application/x-www-form-urlencoded'} 
+				}).success(function(data){
+					if(data.enter == true){
+						loggedInUser = $scope.username;
+						$location.path("/portfolio/" + $scope.username);
+					}else{
+						$scope.err = "Username/Password doesn't exist!";
+					}
+				}).error(function(){
+					$scope.message = "Couldn't post data";
+				});			
+			}
+		});
+	}
 }]);
 
-puzzleControllers.controller('portfolioCtrl', ['$scope', '$http',  '$window' ,'$location','$anchorScroll' ,function($scope, $http,  $window,$location,$anchorScroll) {
+puzzleControllers.controller('signUpCtrl', ['$scope', '$http',  '$window' ,'$location' ,function($scope, $http,$window,$location) {
+	/**
+	 * Checks if the emailid is unique.
+	 * @param {list} users
+	 * @return {boolean} true if unique 
+	 */
+	var checkUniqueEmail = function(users){
+		for(user in users){
+			if($scope.email == users[user].emailid)
+				return false;
+		}
+		return true;
+	}
 
-	// Get sample data
-	$http.get("./data/data.json").success(function(data){
-		$scope.data = data;
-		console.log(data);
+	/**
+	 * Checks if the username is unique.
+	 * @param {list} users
+	 * @return {boolean} true if unique 
+	 */
+	var checkUniqueUsername = function(users){
+		for(user in users){
+			if($scope.username == users[user].username){
+				return false;
+			}
+		}
+		return true;
+	}
 
-		$scope.skills = list_format($scope.data["skills"]);
-		$scope.education = $scope.data["education"][0]
-		$scope.courses = list_format($scope.data["education"][0]["courses"])
-		$scope.internship = $scope.data["internship"];
-		$scope.project = $scope.data["projects"];
-		console.log($scope.project);
+	$(".sign-up").click(function(){
+		submitSignUp();
+	});
+	var select = '?select={emailid:1,username:1}';
+	var urlToCall = baseURL + select;
+	var users;
+	$http.get(urlToCall).success(function(apiUsers){
+		users = apiUsers.data;
 	});
 
+	/**
+	*Checks the aunthenticity of username,password and email and proceeds accordingly.
+	*/
+	var submitSignUp = function(){
+		if(checkUniqueEmail(users) && checkUniqueUsername(users)){
+			userData.email = $scope.email;
+			userData.username = $scope.username;
+			userData.password = $scope.password;
+			$location.path('/add/basic');
 
-	var list_format = function(lists){
-		var data = ""
-		for(list in lists){
-			data +=lists[list] + " , ";
 		}
-		return data.substring(0, data.length - 3) + ".";
+		else if(!checkUniqueEmail(users)){
+			$scope.msg = "Email already exists";
+		}else{
+			$scope.msg = "Username already exists";
+		}
+		$scope.$apply();
 	}
-=======
-var localData = {};
-var jsonData;
 
-puzzleControllers.controller('homeCtrl', ['$scope', '$http',  '$window' ,'$location','$anchorScroll' ,function($scope, $http,  $window,$location,$anchorScroll) {
-	console.log("Do nothing");
->>>>>>> Week 2
 }]);
 
-puzzleControllers.controller('portfolioCtrl', ['$scope', '$http',  '$window' ,'$location','$anchorScroll' ,function($scope, $http,  $window,$location,$anchorScroll) {
+puzzleControllers.controller('portfolioCtrl', ['$scope', '$http',  '$window' ,'$location','$anchorScroll', '$routeParams' ,function($scope, $http,  $window,$location,$anchorScroll, $routeParams) {
+	/**
+	*Checks if the user is logged in or not and sets the buttons accordingly.
+	*/
+	$scope.logged = "";
+	if(loggedInUser != "") 
+		$scope.logged = "Log Out";
+	else if(loggedInUser == "") 
+		$scope.logged = "Get Started";
+	
 	/**
 	 * Takes in list and convert it into the a string with comma seperated values
 	 * @param {list} lists
@@ -53,7 +155,7 @@ puzzleControllers.controller('portfolioCtrl', ['$scope', '$http',  '$window' ,'$
 	/**
 	 * Extract the information from the JSON file
 	 */
-	if(jsonData == undefined){
+	if($routeParams.id == "sample"){
 		$http.get("./data/data.json").success(function(data){
 			$scope.data = data;
 			$scope.skills = listFormat($scope.data["skills"]);
@@ -61,16 +163,96 @@ puzzleControllers.controller('portfolioCtrl', ['$scope', '$http',  '$window' ,'$
 			$scope.courses = listFormat($scope.data["education"][0]["courses"]);
 			$scope.internship = $scope.data["internship"];
 			$scope.project = $scope.data["projects"];
+			$scope.showOneI = true;
+			$scope.showTwoI = true;
+			$scope.showThreeI = true;
+			$scope.showOneP = true;
+			$scope.showTwoP = true;
+			$scope.showThreeP = true;
 		});
-	}else{
-		$scope.data = JSON.parse(jsonData);
-		console.log("Here", $scope.data);
-		$scope.skills = listFormat($scope.data["skills"]);
-		$scope.education = $scope.data["education"];
-		$scope.courses = listFormat($scope.data["education"]["courses"]);
-		$scope.internship = $scope.data["internship"];
-		$scope.project = $scope.data["projects"];
 	}
+	else
+	{
+		/**
+		*Sets myPage to true if you are viewing your own portfolio.
+		*/
+		if($routeParams.id == loggedInUser)
+			$scope.myPage = true;
+		
+		var whereQuery = "?where={'username':'" + $routeParams.id + "'}";
+		var urlToGet = baseURL + whereQuery;
+		$http.get(urlToGet).success(function(apiData){
+			if(apiData.data.length == 0){
+				$scope.error = "User does not exist :(";
+				$location.path("/baduser");
+			}else{
+				$scope.data = JSON.parse(apiData.data[0].data);
+				$scope.skills = listFormat($scope.data["skills"]);
+				$scope.education = $scope.data["education"];
+				$scope.courses = listFormat($scope.data["education"]["courses"]);
+				$scope.internship = $scope.data["internship"];
+				$scope.project = $scope.data["projects"];
+
+				/**
+				*Sets hideLinkedin and hideGithub to true if the fields are left empty by the user. 
+				*/
+				if($scope.data["linkedin"] == undefined)
+					$scope.hideLinkedin = true;
+				if($scope.data["github"] == undefined)
+					$scope.hideGithub = true;
+
+				/**
+				*Makes the front-end scalable for upto 3 internships/projects. 
+				*/
+				if($scope.internship.length == 0)
+					$scope.hideInternship = true;
+				else if($scope.internship.length == 1) {
+					$scope.showOneI = true;
+					document.getElementsByClassName("exp-box")[0].style.marginLeft = "100%";
+				}
+				else if($scope.internship.length == 2) {
+					$scope.showOneI = true;
+					$scope.showTwoI = true;
+					document.getElementsByClassName("exp-outerbox")[0].style.marginLeft = "22%";
+				}
+				else if($scope.internship.length == 3) {
+					$scope.showOneI = true;
+					$scope.showTwoI = true;
+					$scope.showThreeI = true;
+				}
+
+				if($scope.project.length == 0)
+					$scope.hideProject = true;
+				else if($scope.project.length == 1) {
+					$scope.showOneP = true;
+					document.getElementsByClassName("project-box")[0].style.marginLeft = "100%";
+				}	
+				else if($scope.project.length == 2) {
+					$scope.showOneP = true;
+					$scope.showTwoP = true;
+					document.getElementsByClassName("project-outerbox")[0].style.marginLeft = "22%";
+				}
+				else if($scope.project.length == 3) {
+					$scope.showOneP = true;
+					$scope.showTwoP = true;
+					$scope.showThreeP = true;
+				}		
+			}
+		});
+	}
+
+	/**
+	* Logout or get started depending on the button.
+	*/
+	$scope.logout = function(){
+		if($scope.logged == "Get Started")
+			$location.path("/signup");
+		else{
+			loggedInUser = "";
+			$location.path("/");
+		}
+	}
+
 	/**
 	 * Random Image Selector for Work Experience Section
 	 */
@@ -133,7 +315,6 @@ puzzleControllers.controller('addUserCtrl', ['$scope', '$http',  '$window' ,'$lo
 			var temp_data = {};
 			temp_data.name = unprocessed_project_data[project].name;
 			temp_data.description = unprocessed_project_data[project].description;
-			temp_data.github = unprocessed_project_data[project].github;
 			processed_data.push(temp_data);
 		}
 		return processed_data;
@@ -160,21 +341,26 @@ puzzleControllers.controller('addUserCtrl', ['$scope', '$http',  '$window' ,'$lo
 
 	/**
 	 * Saves the information from the front end and saves it into the data object.
+	 * Ensures that all the required fields are filled in correctly.
 	 * Navigates to the next form
 	 */
+
 	$scope.registerBasic = function(){
 		localData.name = $scope.name;
-		localData.emailid = $scope.email;
+		localData.emailid = userData.email;
 		localData.phonenumber = $scope.phonenumber;
 		localData.github = $scope.github;
 		localData.linkedin = $scope.linkedin;
 		localData.skills = formatCSV($scope.skills);
-		console.log(localData);
-		$location.path('/add/education');
+		if($scope.name != undefined && userData.email != undefined && $scope.phonenumber != undefined && $scope.skills != undefined)
+			$location.path('/add/education');
+		else 
+			$scope.message = "Please fill in all the required information";
 	}
 
 	/**
 	 * Saves the information from the front end and saves it into the data object.
+	 * Ensures that all the required fields are filled in correctly.
 	 * Navigates to the next form
 	 */
 	$scope.registerEducation = function(){
@@ -185,44 +371,84 @@ puzzleControllers.controller('addUserCtrl', ['$scope', '$http',  '$window' ,'$lo
 		localData.education.endDate = $scope.graduationDate;
 		localData.education.CGPA = $scope.cgpa;
 		localData.education.courses = formatCSV($scope.courses)
-		console.log(localData);
-		$location.path('/add/internship');
+		if($scope.name != undefined && $scope.major != undefined && $scope.startDate != undefined && $scope.graduationDate != undefined && $scope.cgpa != undefined && $scope.courses != undefined)
+			$location.path('/add/internship');
+		else 
+			$scope.message = "Please fill in all the required information";
 	}
 
 	/**
 	 * Saves the information from the front end and saves it into the data object.
-	 * Navigates to the next form
+	 * Ensures that all the required fields are filled in correctly.
+	 * Navigates to the next form.
 	 */
 	$scope.registerInternship = function(){
+		var moveOn = true;
 		localData.internship = extractInternshipData($scope.internshipChoices);
-		console.log(localData);
-		$location.path('/add/projects');
+		if(localData.internship.length > 0) {
+			for(var i = 0; i < localData.internship.length; i++) {
+				if(localData.internship[i]["company"] == "")
+					localData.internship[i]["company"] = undefined;
+				if(localData.internship[i]["description"] == "")
+					localData.internship[i]["description"] = undefined;
+				if(localData.internship[i]["startDate"] == "")
+					localData.internship[i]["startDate"] = undefined;
+				if(localData.internship[i]["endDate"] == "")
+					localData.internship[i]["endDate"] = undefined;
+				if(!(localData.internship[i]["company"] == undefined && localData.internship[i]["description"] == undefined && localData.internship[i]["startDate"] == undefined && localData.internship[i]["endDate"] == undefined)) {
+					if(localData.internship[i]["company"] == undefined || localData.internship[i]["description"] == undefined || localData.internship[i]["startDate"] == undefined || localData.internship[i]["endDate"] == undefined)
+						moveOn = false;
+				}
+			}
+		}
+		if(moveOn == false)
+			$scope.message = "Please fill in all the required information";
+	 	else
+	 		$location.path('/add/projects');
 	}
 
 	/**
 	 * Saves the information from the front end and saves it into the data object.
+	 * Ensures that all the required fields are filled in correctly.
 	 * Navigates to the next form
 	 */
 	$scope.registerProjects = function(){
+		var moveOn = true;
 		localData.projects = extractProjectData($scope.projectChoices);
-		jsonData = JSON.stringify(localData);
-		var data2send = {
-			"emailid" : localData.emailid,
-			"data" : jsonData
-		};
+		if(localData.projects.length > 0) {
+			for(var i = 0; i < localData.projects.length; i++) {
+				if(localData.projects[i]["name"] == "")
+					localData.projects[i]["name"] = undefined;
+				if(localData.projects[i]["description"] == "")
+					localData.projects[i]["description"] = undefined;
+				if(!(localData.projects[i]["name"] == undefined && localData.projects[i]["description"] == undefined)) {
+					if(localData.projects[i]["name"] == undefined || localData.projects[i]["description"] == undefined)
+						moveOn = false;
+				}
+			}
+		}
+		if(moveOn == false)
+			$scope.message = "Please fill in all the required information";
+	 	else {
+	 		var jsonData = JSON.stringify(localData);
+			var data2send = {
+				"emailid" : userData.email,
+				"username": userData.username,
+				"password": userData.password,
+				"data" : jsonData
+			};
 
-		// Send the data to the backend
-		$http({
-			method  : 'POST',
-			url     : "http://localhost:3000/api/users/",
-			data    : $.param(data2send), //forms user object
-			headers : {'Content-Type': 'application/x-www-form-urlencoded'} 
-		}).success(function(data){
-			$location.path('/portfolio');
-		}).error(function(){
-			$scope.msg = "Couldn't post data";
-			console.log("Error");
-		});
+			$http({
+				method  : 'POST',
+				url     : baseURL,
+				data    : $.param(data2send),
+				headers : {'Content-Type': 'application/x-www-form-urlencoded'} 
+			}).success(function(data){
+				$scope.message = "Your profile has been successfully created. Please log in to continue";
+			}).error(function(){
+				$scope.message = "Couldn't post data";
+			});
+	 	}
 	}
 
 	/**
@@ -230,7 +456,8 @@ puzzleControllers.controller('addUserCtrl', ['$scope', '$http',  '$window' ,'$lo
 	 * Navigates to the home page
 	 */
 	$scope.discardData = function(){
-		localData = {}
+		localData = {};
+		userData = {};
 		$location.path("/");
 	}
 

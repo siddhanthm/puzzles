@@ -2,9 +2,6 @@
   <header class="row header">
     <div class="small-12 small-centered header_content">
       <div class="small-6 large-10 columns header_content_text title"><a class="a-title" href = "#/">Puzzles</a></div>
-      <div class="small-6 large-2 columns header_content_text other_info">  
-        <div class="small-12 columns"><button class="hollow button" ng-click="logout()">Log Out</button></div>
-      </div>
     </div>
   </header>
   <div class="large-12 editintro">
@@ -48,7 +45,7 @@
           <div class="small-12 large-6 columns buttonsbox"><a ng-click="discardData()" class="button alert">Discard Changes</a></div>
           <div class="small-12 large-6 columns buttonsbox"><button type="submit"  ng-click="registerInternship()" class="button success">Next</button></div>
         </div>
-        <div class="small-12 text-center"><font color="green">{{message}}</font></div>
+        <div class="small-12 text-center"><font color="red">{{message}}</font></div>
       </form>
     </div>
     <br><br><br><br><br>

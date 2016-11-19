@@ -2,9 +2,6 @@
     <header class="row header">
     <div class="small-12 small-centered header_content">
       <div class="small-6 large-10 columns header_content_text title"><a class="a-title" href = "#/">Puzzles</a></div>
-      <div class="small-6 large-2 columns header_content_text other_info">  
-        <div class="small-12 columns"><button class="hollow button" ng-click="logout()">Log Out</button></div>
-      </div>
     </div>
   </header>
   <div class="large-12 editintro">
@@ -30,34 +27,18 @@
           <p class="error validationerror text-center" ng-show="myform.phonenumber.$invalid && myform.phonenumber.$touched">
           Please enter a valid phone-number.
           </p>
-           <!-- Email ID -->
-          Email: <font color="red">*</font>
-          <input type="email" name="email" 
-                placeholder="Email"
-                ng-model="email"
-                ng-required="true">
-          <p class="error validationerror text-center" ng-show="myform.email.$invalid && myform.email.$touched">
-          Please enter a valid email.
-          </p>
-          <!-- LinkedIn -->
           LinkedIn:
           <input type="url" name="linkedin" 
                 placeholder="LinkedIn"
                 ng-model="linkedin">
-          <p class="error validationerror text-center" ng-show="myform.linkedin.$invalid && myform.linkedin.$touched">
-          Please enter a valid LinkedIn link.
-          </p>
           <!-- Github -->
           Github:
           <input type="url" name="github" 
                 placeholder="Github"
                 ng-model="github">
-          <p class="error validationerror text-center" ng-show="myform.github.$invalid && myform.github.$touched">
-          Please enter a valid Github link.
-          </p>
 
           <!-- Skills -->
-          Skills:
+          Skills: <font color="red">*</font>
           <input type="text" name="skills" 
                 placeholder="Enter Skills in comma seperated values"
                 ng-model="skills",
@@ -71,7 +52,7 @@
           <div class="small-12 large-6 columns buttonsbox"><a ng-click="discardData()" class="button alert">Discard Changes</a></div>
           <div class="small-12 large-6 columns buttonsbox"><button type="submit" class="button success">Next</button></div>
         </div>
-        <div class="small-12 text-center"><font color="green">{{message}}</font></div>
+        <div class="small-12 text-center"><font color="red">{{message}}</font></div>
       </form>
     </div>
   </div>

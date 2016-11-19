@@ -4,6 +4,8 @@ var mongoose = require('mongoose');
 // Define our user schema
 var TempUserSchema   = new mongoose.Schema({
   emailid: {type:String, unique:true},
+  username: {type:String, unique:true},
+  password: {type:String},
   data: {type:String}
 });
 

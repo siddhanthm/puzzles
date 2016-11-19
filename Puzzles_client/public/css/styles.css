@@ -4198,18 +4198,6 @@ body {
         .homePage .header .header_content .title {
           padding-left: 0px;
           text-align: center; } }
-<<<<<<< 11e633d9b88b7295eca77c9f0a4cd36ad1103bde
-    /* line 49, ../../source_sass/_base.scss */
-    .homePage .header .header_content .other_info .button {
-      width: 100%; }
-    /* line 54, ../../source_sass/_base.scss */
-    .homePage .header .header_content a {
-      margin-bottom: 0px; }
-    /* line 57, ../../source_sass/_base.scss */
-    .homePage .header .header_content button {
-      margin-bottom: 0px; }
-    /* line 60, ../../source_sass/_base.scss */
-=======
     /* line 52, ../../source_sass/_base.scss */
     .homePage .header .header_content .other_info .button {
       width: 100%; }
@@ -4220,31 +4208,10 @@ body {
     .homePage .header .header_content button {
       margin-bottom: 0px; }
     /* line 63, ../../source_sass/_base.scss */
->>>>>>> Week 2
     .homePage .header .header_content .header_content_text {
       position: relative;
       top: 50%;
       transform: translateY(-50%); }
-<<<<<<< 11e633d9b88b7295eca77c9f0a4cd36ad1103bde
-    /* line 65, ../../source_sass/_base.scss */
-    .homePage .header .header_content .other_info_text {
-      color: #929ead; }
-      @media screen and (max-width: 640px) {
-        /* line 65, ../../source_sass/_base.scss */
-        .homePage .header .header_content .other_info_text {
-          display: none; } }
-    /* line 73, ../../source_sass/_base.scss */
-    .homePage .header .header_content .priya_ocd_right {
-      text-align: right; }
-    /* line 77, ../../source_sass/_base.scss */
-    .homePage .header .header_content .priya_ocd_leftt {
-      text-align: left; }
-    /* line 81, ../../source_sass/_base.scss */
-    .homePage .header .header_content .other_info_text:hover {
-      color: #f07c17;
-      text-decoration: underline; }
-/* line 88, ../../source_sass/_base.scss */
-=======
     /* line 68, ../../source_sass/_base.scss */
     .homePage .header .header_content .other_info_text {
       color: #929ead; }
@@ -4263,7 +4230,6 @@ body {
       color: #f07c17;
       text-decoration: underline; }
 /* line 91, ../../source_sass/_base.scss */
->>>>>>> Week 2
 .homePage .home-intro {
   height: 100vh;
   max-width: 100vw;
@@ -4273,7 +4239,7 @@ body {
   background-position: center center;
   background-size: cover;
   background-image: url("../data/images/home4.jpeg"); }
-  /* line 98, ../../source_sass/_base.scss */
+  /* line 101, ../../source_sass/_base.scss */
   .homePage .home-intro .home-intro-box {
     background-color: rgba(0, 0, 0, 0.5);
     position: relative;
@@ -4283,43 +4249,24 @@ body {
     color: white;
     text-align: center;
     width: 100vw; }
-<<<<<<< 11e633d9b88b7295eca77c9f0a4cd36ad1103bde
-    /* line 108, ../../source_sass/_base.scss */
-=======
     /* line 111, ../../source_sass/_base.scss */
->>>>>>> Week 2
     .homePage .home-intro .home-intro-box .home-intro-heading1 {
       max-width: 100%;
       font-size: 45px; }
       @media screen and (max-width: 640px) {
-<<<<<<< 11e633d9b88b7295eca77c9f0a4cd36ad1103bde
-        /* line 108, ../../source_sass/_base.scss */
-        .homePage .home-intro .home-intro-box .home-intro-heading1 {
-          display: none; } }
-    /* line 117, ../../source_sass/_base.scss */
-=======
         /* line 111, ../../source_sass/_base.scss */
         .homePage .home-intro .home-intro-box .home-intro-heading1 {
           display: none; } }
     /* line 120, ../../source_sass/_base.scss */
->>>>>>> Week 2
     .homePage .home-intro .home-intro-box .home-intro-heading2 {
       font-size: 24px;
       margin-top: 10px;
       font-style: italic; }
-<<<<<<< 11e633d9b88b7295eca77c9f0a4cd36ad1103bde
-      /* line 122, ../../source_sass/_base.scss */
-      .homePage .home-intro .home-intro-box .home-intro-heading2 button {
-        width: 50%;
-        margin-left: 30px; }
-/* line 130, ../../source_sass/_base.scss */
-=======
       /* line 125, ../../source_sass/_base.scss */
       .homePage .home-intro .home-intro-box .home-intro-heading2 button {
         width: 50%;
         margin-left: 30px; }
 /* line 133, ../../source_sass/_base.scss */
->>>>>>> Week 2
 .homePage .home-main {
   min-height: 100vh;
   width: 100%;
@@ -4328,52 +4275,23 @@ body {
   padding-bottom: 100px;
   background-color: #ed6240; }
   @media screen and (max-width: 640px) {
-<<<<<<< 11e633d9b88b7295eca77c9f0a4cd36ad1103bde
-    /* line 130, ../../source_sass/_base.scss */
-    .homePage .home-main {
-      padding-top: 50px;
-      padding-bottom: 50px; } }
-  /* line 142, ../../source_sass/_base.scss */
-=======
     /* line 133, ../../source_sass/_base.scss */
     .homePage .home-main {
       padding-top: 50px;
       padding-bottom: 50px; } }
   /* line 145, ../../source_sass/_base.scss */
->>>>>>> Week 2
   .homePage .home-main .home-main-heading {
     font-size: 50px;
     color: white; }
     @media screen and (max-width: 640px) {
-<<<<<<< 11e633d9b88b7295eca77c9f0a4cd36ad1103bde
-      /* line 142, ../../source_sass/_base.scss */
-      .homePage .home-main .home-main-heading {
-        font-size: 40px; } }
-  /* line 149, ../../source_sass/_base.scss */
-=======
       /* line 145, ../../source_sass/_base.scss */
       .homePage .home-main .home-main-heading {
         font-size: 40px; } }
   /* line 152, ../../source_sass/_base.scss */
->>>>>>> Week 2
   .homePage .home-main .home-main-line {
     width: 50px;
     border-width: 5px;
     color: white; }
-<<<<<<< 11e633d9b88b7295eca77c9f0a4cd36ad1103bde
-  /* line 155, ../../source_sass/_base.scss */
-  .homePage .home-main .home-main-outerbox {
-    margin-top: 120px; }
-    @media screen and (max-width: 640px) {
-      /* line 155, ../../source_sass/_base.scss */
-      .homePage .home-main .home-main-outerbox {
-        margin-top: 60px; } }
-    @media screen and (max-width: 640px) {
-      /* line 161, ../../source_sass/_base.scss */
-      .homePage .home-main .home-main-outerbox .column, .homePage .home-main .home-main-outerbox .columns {
-        margin-top: 15px; } }
-  /* line 167, ../../source_sass/_base.scss */
-=======
   /* line 158, ../../source_sass/_base.scss */
   .homePage .home-main .home-main-outerbox {
     margin-top: 120px; }
@@ -4386,7 +4304,6 @@ body {
       .homePage .home-main .home-main-outerbox .column, .homePage .home-main .home-main-outerbox .columns {
         margin-top: 15px; } }
   /* line 170, ../../source_sass/_base.scss */
->>>>>>> Week 2
   .homePage .home-main .home-main-box {
     color: white;
     background-color: #FF7C5C;
@@ -4394,18 +4311,6 @@ body {
     width: 100%;
     min-height: 300px;
     padding: 30px; }
-<<<<<<< 11e633d9b88b7295eca77c9f0a4cd36ad1103bde
-    /* line 174, ../../source_sass/_base.scss */
-    .homePage .home-main .home-main-box .home-box-icon {
-      font-size: 45px; }
-    /* line 177, ../../source_sass/_base.scss */
-    .homePage .home-main .home-main-box .home-box-title {
-      font-size: 1.5em; }
-    /* line 180, ../../source_sass/_base.scss */
-    .homePage .home-main .home-main-box .home-box-text {
-      padding: 40px; }
-/* line 186, ../../source_sass/_base.scss */
-=======
     /* line 177, ../../source_sass/_base.scss */
     .homePage .home-main .home-main-box .home-box-icon {
       font-size: 45px; }
@@ -4416,7 +4321,6 @@ body {
     .homePage .home-main .home-main-box .home-box-text {
       padding: 40px; }
 /* line 189, ../../source_sass/_base.scss */
->>>>>>> Week 2
 .homePage .home-team {
   min-height: 100vh;
   width: 100%;
@@ -4426,36 +4330,6 @@ body {
   background-color: #287fb8;
   color: white; }
   @media screen and (max-width: 640px) {
-<<<<<<< 11e633d9b88b7295eca77c9f0a4cd36ad1103bde
-    /* line 186, ../../source_sass/_base.scss */
-    .homePage .home-team {
-      padding-top: 50px;
-      padding-bottom: 50px; } }
-  /* line 199, ../../source_sass/_base.scss */
-  .homePage .home-team .home-main-heading {
-    font-size: 50px; }
-    @media screen and (max-width: 640px) {
-      /* line 199, ../../source_sass/_base.scss */
-      .homePage .home-team .home-main-heading {
-        font-size: 40px; } }
-  /* line 205, ../../source_sass/_base.scss */
-  .homePage .home-team .home-main-line {
-    width: 50px;
-    border-width: 5px;
-    color: #27374c; }
-  /* line 211, ../../source_sass/_base.scss */
-  .homePage .home-team .home-main-outerbox {
-    margin-top: 120px; }
-    @media screen and (max-width: 640px) {
-      /* line 211, ../../source_sass/_base.scss */
-      .homePage .home-team .home-main-outerbox {
-        margin-top: 60px; } }
-    @media screen and (max-width: 640px) {
-      /* line 217, ../../source_sass/_base.scss */
-      .homePage .home-team .home-main-outerbox .column, .homePage .home-team .home-main-outerbox .columns {
-        margin-top: 15px; } }
-  /* line 223, ../../source_sass/_base.scss */
-=======
     /* line 189, ../../source_sass/_base.scss */
     .homePage .home-team {
       padding-top: 50px;
@@ -4484,22 +4358,12 @@ body {
       .homePage .home-team .home-main-outerbox .column, .homePage .home-team .home-main-outerbox .columns {
         margin-top: 15px; } }
   /* line 226, ../../source_sass/_base.scss */
->>>>>>> Week 2
   .homePage .home-team .home-main-box {
     background-color: #3e99d5;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
     width: 100%;
     min-height: 300px;
     padding: 30px; }
-<<<<<<< 11e633d9b88b7295eca77c9f0a4cd36ad1103bde
-    /* line 230, ../../source_sass/_base.scss */
-    .homePage .home-team .home-main-box .home-main-name {
-      font-size: 30px; }
-    /* line 234, ../../source_sass/_base.scss */
-    .homePage .home-team .home-main-box .home-main-icons {
-      margin-top: 15px; }
-      /* line 236, ../../source_sass/_base.scss */
-=======
     /* line 233, ../../source_sass/_base.scss */
     .homePage .home-team .home-main-box .home-main-name {
       font-size: 30px; }
@@ -4507,26 +4371,17 @@ body {
     .homePage .home-team .home-main-box .home-main-icons {
       margin-top: 15px; }
       /* line 238, ../../source_sass/_base.scss */
->>>>>>> Week 2
       .homePage .home-team .home-main-box .home-main-icons .circle {
         color: white;
         border: 2px solid #EFF3F3;
         border-radius: 50%;
         padding: 0.5em;
         transition: border-radius .5s ease; }
-<<<<<<< 11e633d9b88b7295eca77c9f0a4cd36ad1103bde
-      /* line 243, ../../source_sass/_base.scss */
-      .homePage .home-team .home-main-box .home-main-icons .circle:hover {
-        border-radius: 0%; }
-
-/* line 253, ../../source_sass/_base.scss */
-=======
       /* line 245, ../../source_sass/_base.scss */
       .homePage .home-team .home-main-box .home-main-icons .circle:hover {
         border-radius: 0%; }
 
 /* line 255, ../../source_sass/_base.scss */
->>>>>>> Week 2
 .portfolioPage .header {
   background-color: white;
   border-bottom: 2px solid #bfcad2;
@@ -4536,44 +4391,17 @@ body {
   width: 100%;
   max-width: 100vw;
   z-index: 2; }
-<<<<<<< 11e633d9b88b7295eca77c9f0a4cd36ad1103bde
-  /* line 263, ../../source_sass/_base.scss */
-  .portfolioPage .header .header_content {
-    height: 60px;
-    position: absolute; }
-    /* line 267, ../../source_sass/_base.scss */
-=======
   /* line 265, ../../source_sass/_base.scss */
   .portfolioPage .header .header_content {
     height: 60px;
     position: absolute; }
     /* line 269, ../../source_sass/_base.scss */
->>>>>>> Week 2
     .portfolioPage .header .header_content .title {
       font-family: 'Satisfy', cursive;
       padding-left: 60px;
       font-size: 2.3em;
       color: #ff855c; }
       @media screen and (max-width: 640px) {
-<<<<<<< 11e633d9b88b7295eca77c9f0a4cd36ad1103bde
-        /* line 267, ../../source_sass/_base.scss */
-        .portfolioPage .header .header_content .title {
-          padding-left: 0px;
-          text-align: center; } }
-      /* line 277, ../../source_sass/_base.scss */
-      .portfolioPage .header .header_content .title a {
-        color: #ff855c; }
-    /* line 282, ../../source_sass/_base.scss */
-    .portfolioPage .header .header_content .other_info .button {
-      width: 100%; }
-    /* line 287, ../../source_sass/_base.scss */
-    .portfolioPage .header .header_content a {
-      margin-bottom: 0px; }
-    /* line 290, ../../source_sass/_base.scss */
-    .portfolioPage .header .header_content button {
-      margin-bottom: 0px; }
-    /* line 293, ../../source_sass/_base.scss */
-=======
         /* line 269, ../../source_sass/_base.scss */
         .portfolioPage .header .header_content .title {
           padding-left: 0px;
@@ -4591,31 +4419,10 @@ body {
     .portfolioPage .header .header_content button {
       margin-bottom: 0px; }
     /* line 295, ../../source_sass/_base.scss */
->>>>>>> Week 2
     .portfolioPage .header .header_content .header_content_text {
       position: relative;
       top: 50%;
       transform: translateY(-50%); }
-<<<<<<< 11e633d9b88b7295eca77c9f0a4cd36ad1103bde
-    /* line 298, ../../source_sass/_base.scss */
-    .portfolioPage .header .header_content .other_info_text {
-      color: #929ead; }
-      @media screen and (max-width: 640px) {
-        /* line 298, ../../source_sass/_base.scss */
-        .portfolioPage .header .header_content .other_info_text {
-          display: none; } }
-    /* line 306, ../../source_sass/_base.scss */
-    .portfolioPage .header .header_content .priya_ocd_right {
-      text-align: right; }
-    /* line 310, ../../source_sass/_base.scss */
-    .portfolioPage .header .header_content .priya_ocd_leftt {
-      text-align: left; }
-    /* line 314, ../../source_sass/_base.scss */
-    .portfolioPage .header .header_content .other_info_text:hover {
-      color: #0fb5b3;
-      text-decoration: underline; }
-/* line 321, ../../source_sass/_base.scss */
-=======
     /* line 300, ../../source_sass/_base.scss */
     .portfolioPage .header .header_content .other_info_text {
       color: #929ead; }
@@ -4634,7 +4441,6 @@ body {
       color: #0fb5b3;
       text-decoration: underline; }
 /* line 323, ../../source_sass/_base.scss */
->>>>>>> Week 2
 .portfolioPage .pHome {
   height: 100vh;
   max-width: 100vw;
@@ -4643,23 +4449,14 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-<<<<<<< 11e633d9b88b7295eca77c9f0a4cd36ad1103bde
-  background-image: url("../data/images/Shahrukh_Khan.jpg"); }
-  /* line 331, ../../source_sass/_base.scss */
-=======
   background-image: url("../data/images/bbb.jpg"); }
   /* line 333, ../../source_sass/_base.scss */
->>>>>>> Week 2
   .portfolioPage .pHome .innerBox {
     padding-top: 16%;
     background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
     width: 100%; }
-<<<<<<< 11e633d9b88b7295eca77c9f0a4cd36ad1103bde
-    /* line 336, ../../source_sass/_base.scss */
-=======
     /* line 338, ../../source_sass/_base.scss */
->>>>>>> Week 2
     .portfolioPage .pHome .innerBox .name {
       font-family: Helvetica,Arial,sans-serif;
       padding-top: 10%;
@@ -4668,71 +4465,31 @@ body {
       font-weight: 300;
       line-height: 1.3;
       margin-left: 100px; }
-<<<<<<< 11e633d9b88b7295eca77c9f0a4cd36ad1103bde
-      /* line 344, ../../source_sass/_base.scss */
-      .portfolioPage .pHome .innerBox .name .txt-rotate {
-        color: #0fb5b3; }
-/* line 351, ../../source_sass/_base.scss */
-=======
       /* line 346, ../../source_sass/_base.scss */
       .portfolioPage .pHome .innerBox .name .txt-rotate {
         color: #0fb5b3; }
 /* line 353, ../../source_sass/_base.scss */
->>>>>>> Week 2
 .portfolioPage .pAbout {
   min-height: 100vh;
   width: 100%;
   max-width: 100%;
   background-color: white; }
   @media screen and (max-width: 640px) {
-<<<<<<< 11e633d9b88b7295eca77c9f0a4cd36ad1103bde
-    /* line 351, ../../source_sass/_base.scss */
-    .portfolioPage .pAbout {
-      padding-top: 50px;
-      padding-bottom: 50px; } }
-  /* line 361, ../../source_sass/_base.scss */
-=======
     /* line 353, ../../source_sass/_base.scss */
     .portfolioPage .pAbout {
       padding-top: 50px;
       padding-bottom: 50px; } }
   /* line 363, ../../source_sass/_base.scss */
->>>>>>> Week 2
   .portfolioPage .pAbout .upperHalf {
     background-color: #0fb5b3;
     color: white;
     padding-bottom: 5%; }
-<<<<<<< 11e633d9b88b7295eca77c9f0a4cd36ad1103bde
-    /* line 365, ../../source_sass/_base.scss */
-=======
     /* line 367, ../../source_sass/_base.scss */
->>>>>>> Week 2
     .portfolioPage .pAbout .upperHalf .about-heading {
       padding-top: 5%;
       font-size: 35px;
       color: white; }
       @media screen and (max-width: 640px) {
-<<<<<<< 11e633d9b88b7295eca77c9f0a4cd36ad1103bde
-        /* line 365, ../../source_sass/_base.scss */
-        .portfolioPage .pAbout .upperHalf .about-heading {
-          font-size: 40px; } }
-      /* line 372, ../../source_sass/_base.scss */
-      .portfolioPage .pAbout .upperHalf .about-heading p {
-        font-size: 25px;
-        color: #777; }
-  /* line 379, ../../source_sass/_base.scss */
-  .portfolioPage .pAbout .about-outerbox {
-    margin-top: 120px; }
-    @media screen and (max-width: 640px) {
-      /* line 379, ../../source_sass/_base.scss */
-      .portfolioPage .pAbout .about-outerbox {
-        margin-top: 60px; } }
-    @media screen and (max-width: 640px) {
-      /* line 385, ../../source_sass/_base.scss */
-      .portfolioPage .pAbout .about-outerbox .column, .portfolioPage .pAbout .about-outerbox .columns {
-        margin-top: 15px; } }
-  /* line 391, ../../source_sass/_base.scss */
-=======
         /* line 367, ../../source_sass/_base.scss */
         .portfolioPage .pAbout .upperHalf .about-heading {
           font-size: 40px; } }
@@ -4752,33 +4509,12 @@ body {
       .portfolioPage .pAbout .about-outerbox .column, .portfolioPage .pAbout .about-outerbox .columns {
         margin-top: 15px; } }
   /* line 393, ../../source_sass/_base.scss */
->>>>>>> Week 2
   .portfolioPage .pAbout .about-box {
     color: #777;
     background-color: white;
     width: 100%;
     min-height: 300px;
     padding: 30px; }
-<<<<<<< 11e633d9b88b7295eca77c9f0a4cd36ad1103bde
-    /* line 397, ../../source_sass/_base.scss */
-    .portfolioPage .pAbout .about-box .about-box-icon {
-      font-size: 35px;
-      color: black; }
-    /* line 402, ../../source_sass/_base.scss */
-    .portfolioPage .pAbout .about-box .about-box-title {
-      font-size: 1.5em;
-      color: black; }
-    /* line 407, ../../source_sass/_base.scss */
-    .portfolioPage .pAbout .about-box .about-box-text {
-      padding: 40px; }
-  /* line 412, ../../source_sass/_base.scss */
-  .portfolioPage .pAbout .about-box:hover .about-box-icon {
-    color: #0fb5b3; }
-  /* line 415, ../../source_sass/_base.scss */
-  .portfolioPage .pAbout .about-box:hover .about-box-title {
-    color: #0fb5b3; }
-/* line 421, ../../source_sass/_base.scss */
-=======
     /* line 399, ../../source_sass/_base.scss */
     .portfolioPage .pAbout .about-box .about-box-icon {
       font-size: 35px;
@@ -4797,7 +4533,6 @@ body {
   .portfolioPage .pAbout .about-box:hover .about-box-title {
     color: #0fb5b3; }
 /* line 423, ../../source_sass/_base.scss */
->>>>>>> Week 2
 .portfolioPage .pExp {
   min-height: 100vh;
   width: 100%;
@@ -4806,16 +4541,6 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
-<<<<<<< 11e633d9b88b7295eca77c9f0a4cd36ad1103bde
-  background-size: cover;
-  background-image: url("../data/images/google.jpg"); }
-  @media screen and (max-width: 640px) {
-    /* line 421, ../../source_sass/_base.scss */
-    .portfolioPage .pExp {
-      padding-top: 50px;
-      padding-bottom: 50px; } }
-  /* line 436, ../../source_sass/_base.scss */
-=======
   background-size: cover; }
   @media screen and (max-width: 640px) {
     /* line 423, ../../source_sass/_base.scss */
@@ -4823,7 +4548,6 @@ body {
       padding-top: 50px;
       padding-bottom: 50px; } }
   /* line 437, ../../source_sass/_base.scss */
->>>>>>> Week 2
   .portfolioPage .pExp .exp-heading {
     background-color: rgba(255, 255, 255, 0.8);
     font-size: 50px;
@@ -4831,27 +4555,6 @@ body {
     padding-top: 5rem;
     padding-bottom: 2rem; }
     @media screen and (max-width: 640px) {
-<<<<<<< 11e633d9b88b7295eca77c9f0a4cd36ad1103bde
-      /* line 436, ../../source_sass/_base.scss */
-      .portfolioPage .pExp .exp-heading {
-        font-size: 40px; } }
-    /* line 445, ../../source_sass/_base.scss */
-    .portfolioPage .pExp .exp-heading p {
-      font-size: 25px;
-      color: black; }
-  /* line 451, ../../source_sass/_base.scss */
-  .portfolioPage .pExp .exp-outerbox {
-    margin-top: 120px; }
-    @media screen and (max-width: 640px) {
-      /* line 451, ../../source_sass/_base.scss */
-      .portfolioPage .pExp .exp-outerbox {
-        margin-top: 60px; } }
-    @media screen and (max-width: 640px) {
-      /* line 457, ../../source_sass/_base.scss */
-      .portfolioPage .pExp .exp-outerbox .column, .portfolioPage .pExp .exp-outerbox .columns {
-        margin-top: 15px; } }
-  /* line 463, ../../source_sass/_base.scss */
-=======
       /* line 437, ../../source_sass/_base.scss */
       .portfolioPage .pExp .exp-heading {
         font-size: 40px; } }
@@ -4871,85 +4574,11 @@ body {
       .portfolioPage .pExp .exp-outerbox .column, .portfolioPage .pExp .exp-outerbox .columns {
         margin-top: 15px; } }
   /* line 464, ../../source_sass/_base.scss */
->>>>>>> Week 2
   .portfolioPage .pExp .exp-box {
     color: black;
     background-color: rgba(238, 238, 238, 0.8);
     border: 1px solid #d9d7d8;
     border-radius: 6px;
-<<<<<<< 11e633d9b88b7295eca77c9f0a4cd36ad1103bde
-    width: 100%;
-    min-height: 300px;
-    padding: 30px; }
-    /* line 471, ../../source_sass/_base.scss */
-    .portfolioPage .pExp .exp-box .exp-box-icon {
-      font-size: 45px; }
-    /* line 475, ../../source_sass/_base.scss */
-    .portfolioPage .pExp .exp-box .exp-box-title {
-      font-size: 1.5em; }
-    /* line 479, ../../source_sass/_base.scss */
-    .portfolioPage .pExp .exp-box .exp-box-text {
-      padding: 40px; }
-  /* line 483, ../../source_sass/_base.scss */
-  .portfolioPage .pExp .exp-box:hover {
-    background-color: #0fb5b3;
-    color: aliceblue; }
-/* line 489, ../../source_sass/_base.scss */
-.portfolioPage .pProject {
-  min-height: 100vh;
-  width: 100%;
-  max-width: 100%;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-color: #eee; }
-  @media screen and (max-width: 640px) {
-    /* line 489, ../../source_sass/_base.scss */
-    .portfolioPage .pProject {
-      padding-top: 50px;
-      padding-bottom: 50px; } }
-  /* line 501, ../../source_sass/_base.scss */
-  .portfolioPage .pProject .project-heading {
-    font-size: 50px;
-    color: black; }
-    @media screen and (max-width: 640px) {
-      /* line 501, ../../source_sass/_base.scss */
-      .portfolioPage .pProject .project-heading {
-        font-size: 40px; } }
-  /* line 508, ../../source_sass/_base.scss */
-  .portfolioPage .pProject .project-line {
-    width: 50px;
-    border-width: 5px;
-    color: black; }
-  /* line 514, ../../source_sass/_base.scss */
-  .portfolioPage .pProject .project-outerbox {
-    margin-top: 120px; }
-    @media screen and (max-width: 640px) {
-      /* line 514, ../../source_sass/_base.scss */
-      .portfolioPage .pProject .project-outerbox {
-        margin-top: 60px; } }
-    @media screen and (max-width: 640px) {
-      /* line 520, ../../source_sass/_base.scss */
-      .portfolioPage .pProject .project-outerbox .column, .portfolioPage .pProject .project-outerbox .columns {
-        margin-top: 15px; } }
-  /* line 526, ../../source_sass/_base.scss */
-  .portfolioPage .pProject .project-box {
-    color: black;
-    background-color: #eee;
-    border: 1px solid #d9d7d8;
-    border-radius: 6px;
-    width: 100%;
-    min-height: 300px;
-    padding: 30px; }
-    /* line 534, ../../source_sass/_base.scss */
-    .portfolioPage .pProject .project-box .project-box-icon {
-      font-size: 45px; }
-    /* line 538, ../../source_sass/_base.scss */
-    .portfolioPage .pProject .project-box .project-box-title {
-      font-size: 1.5em; }
-    /* line 542, ../../source_sass/_base.scss */
-    .portfolioPage .pProject .project-box .project-box-text {
-      padding: 40px; }
-=======
     width: 100%;
     min-height: 300px;
     padding: 30px; }
@@ -5141,7 +4770,264 @@ body {
       position: relative;
       left: 50%;
       transform: translateX(-50%); }
->>>>>>> Week 2
+
+/* line 693, ../../source_sass/_base.scss */
+.loginPage {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../data/images/login.jpg");
+  color: #2c3e50;
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+  margin-left: 0px;
+  margin-right: 0px; }
+  /* line 694, ../../source_sass/_base.scss */
+  .loginPage .header {
+    background-color: white;
+    border-bottom: 2px solid #bfcad2;
+    min-height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 100vw;
+    z-index: 2; }
+    /* line 704, ../../source_sass/_base.scss */
+    .loginPage .header .header_content {
+      height: 60px;
+      position: absolute; }
+      /* line 708, ../../source_sass/_base.scss */
+      .loginPage .header .header_content .title {
+        font-family: 'Satisfy', cursive;
+        padding-left: 60px;
+        font-size: 2.3em;
+        color: #ff855c; }
+        /* line 714, ../../source_sass/_base.scss */
+        .loginPage .header .header_content .title a {
+          margin-bottom: 0px;
+          color: #ff855c; }
+        @media screen and (max-width: 640px) {
+          /* line 708, ../../source_sass/_base.scss */
+          .loginPage .header .header_content .title {
+            padding-left: 0px;
+            text-align: center; } }
+      /* line 727, ../../source_sass/_base.scss */
+      .loginPage .header .header_content .other_info .button {
+        width: 100%; }
+      /* line 732, ../../source_sass/_base.scss */
+      .loginPage .header .header_content a {
+        margin-bottom: 0px; }
+      /* line 735, ../../source_sass/_base.scss */
+      .loginPage .header .header_content button {
+        margin-bottom: 0px; }
+      /* line 738, ../../source_sass/_base.scss */
+      .loginPage .header .header_content .header_content_text {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%); }
+      /* line 743, ../../source_sass/_base.scss */
+      .loginPage .header .header_content .other_info_text {
+        color: #929ead; }
+        @media screen and (max-width: 640px) {
+          /* line 743, ../../source_sass/_base.scss */
+          .loginPage .header .header_content .other_info_text {
+            display: none; } }
+      /* line 751, ../../source_sass/_base.scss */
+      .loginPage .header .header_content .priya_ocd_right {
+        text-align: right; }
+      /* line 755, ../../source_sass/_base.scss */
+      .loginPage .header .header_content .priya_ocd_leftt {
+        text-align: left; }
+      /* line 759, ../../source_sass/_base.scss */
+      .loginPage .header .header_content .other_info_text:hover {
+        color: #f07c17;
+        text-decoration: underline; }
+  /* line 777, ../../source_sass/_base.scss */
+  .loginPage .outer_box {
+    min-height: 20vh;
+    padding: 30px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    background-color: white; }
+    /* line 786, ../../source_sass/_base.scss */
+    .loginPage .outer_box .page_heading {
+      font-size: 2.5em;
+      padding: 10px;
+      padding-bottom: 40px; }
+    /* line 792, ../../source_sass/_base.scss */
+    .loginPage .outer_box a {
+      color: white; }
+    /* line 795, ../../source_sass/_base.scss */
+    .loginPage .outer_box .button {
+      float: right;
+      margin-top: 15px; }
+
+/* line 801, ../../source_sass/_base.scss */
+.signupPage {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../data/images/signup.png");
+  height: 100vh;
+  position: absolute;
+  width: 100vw;
+  margin-left: 0px;
+  margin-right: 0px; }
+  /* line 802, ../../source_sass/_base.scss */
+  .signupPage .header {
+    background-color: white;
+    border-bottom: 2px solid #bfcad2;
+    min-height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 100vw;
+    z-index: 2; }
+    /* line 812, ../../source_sass/_base.scss */
+    .signupPage .header .header_content {
+      height: 60px;
+      position: absolute; }
+      /* line 816, ../../source_sass/_base.scss */
+      .signupPage .header .header_content .title {
+        font-family: 'Satisfy', cursive;
+        padding-left: 60px;
+        font-size: 2.3em;
+        color: #ff855c; }
+        /* line 822, ../../source_sass/_base.scss */
+        .signupPage .header .header_content .title a {
+          margin-bottom: 0px;
+          color: #ff855c; }
+        @media screen and (max-width: 640px) {
+          /* line 816, ../../source_sass/_base.scss */
+          .signupPage .header .header_content .title {
+            padding-left: 0px;
+            text-align: center; } }
+      /* line 835, ../../source_sass/_base.scss */
+      .signupPage .header .header_content .other_info .button {
+        width: 100%; }
+      /* line 840, ../../source_sass/_base.scss */
+      .signupPage .header .header_content a {
+        margin-bottom: 0px; }
+      /* line 843, ../../source_sass/_base.scss */
+      .signupPage .header .header_content button {
+        margin-bottom: 0px; }
+      /* line 846, ../../source_sass/_base.scss */
+      .signupPage .header .header_content .header_content_text {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%); }
+      /* line 851, ../../source_sass/_base.scss */
+      .signupPage .header .header_content .other_info_text {
+        color: #929ead; }
+        @media screen and (max-width: 640px) {
+          /* line 851, ../../source_sass/_base.scss */
+          .signupPage .header .header_content .other_info_text {
+            display: none; } }
+      /* line 859, ../../source_sass/_base.scss */
+      .signupPage .header .header_content .priya_ocd_right {
+        text-align: right; }
+      /* line 863, ../../source_sass/_base.scss */
+      .signupPage .header .header_content .priya_ocd_leftt {
+        text-align: left; }
+      /* line 867, ../../source_sass/_base.scss */
+      .signupPage .header .header_content .other_info_text:hover {
+        color: #f07c17;
+        text-decoration: underline; }
+  /* line 884, ../../source_sass/_base.scss */
+  .signupPage .outer_box {
+    min-height: 20vh;
+    padding: 30px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    background-color: white; }
+    /* line 893, ../../source_sass/_base.scss */
+    .signupPage .outer_box .page_heading {
+      font-size: 2.5em;
+      padding: 10px;
+      padding-bottom: 40px; }
+    /* line 899, ../../source_sass/_base.scss */
+    .signupPage .outer_box a {
+      color: white; }
+    /* line 902, ../../source_sass/_base.scss */
+    .signupPage .outer_box .button {
+      float: right;
+      margin-top: 15px; }
+
+/* line 910, ../../source_sass/_base.scss */
+.baduserPage .header {
+  background-color: white;
+  border-bottom: 2px solid #bfcad2;
+  min-height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 100vw;
+  z-index: 2; }
+  /* line 920, ../../source_sass/_base.scss */
+  .baduserPage .header .header_content {
+    height: 60px;
+    position: absolute; }
+    /* line 924, ../../source_sass/_base.scss */
+    .baduserPage .header .header_content .title {
+      font-family: 'Satisfy', cursive;
+      padding-left: 60px;
+      font-size: 2.3em;
+      color: #ff855c; }
+      @media screen and (max-width: 640px) {
+        /* line 924, ../../source_sass/_base.scss */
+        .baduserPage .header .header_content .title {
+          padding-left: 0px;
+          text-align: center; } }
+      /* line 934, ../../source_sass/_base.scss */
+      .baduserPage .header .header_content .title a {
+        color: #ff855c; }
+    /* line 939, ../../source_sass/_base.scss */
+    .baduserPage .header .header_content a {
+      margin-bottom: 0px; }
+    /* line 942, ../../source_sass/_base.scss */
+    .baduserPage .header .header_content button {
+      margin-bottom: 0px; }
+    /* line 945, ../../source_sass/_base.scss */
+    .baduserPage .header .header_content .header_content_text {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%); }
+/* line 953, ../../source_sass/_base.scss */
+.baduserPage .buHome {
+  height: 100vh;
+  max-width: 100vw;
+  width: 100vw;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../data/images/bbb.jpg"); }
+  /* line 963, ../../source_sass/_base.scss */
+  .baduserPage .buHome .innerBox {
+    padding-top: 16%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%; }
+    /* line 968, ../../source_sass/_base.scss */
+    .baduserPage .buHome .innerBox .name {
+      font-family: Helvetica,Arial,sans-serif;
+      padding-top: 10%;
+      color: aliceblue;
+      font-size: 60px;
+      font-weight: 300;
+      line-height: 1.3;
+      margin-left: 34%;
+      margin-right: 34%; }
+      /* line 977, ../../source_sass/_base.scss */
+      .baduserPage .buHome .innerBox .name .txt-rotate {
+        color: #0fb5b3; }
 
 /*
   NOTE: Do not touch this file. Write the bulk of your custom styles
