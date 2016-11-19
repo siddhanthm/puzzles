@@ -110,11 +110,7 @@ userRouteId.delete(function(req,res){
       TempUser.findByIdAndRemove(req.params.id, function(err,user){
         if(err)
           res.status(500).send(err);
-        TempUser.find(function(err, users) {
-          if (err)
-            res.status(500).send(err)
-          res.json({message:'User Deleted!', data:users});
-        });
+        res.json({message:'User Deleted!', data:[]});
       });
     }
   });
