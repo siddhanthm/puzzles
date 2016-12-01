@@ -116,6 +116,36 @@ userRouteId.delete(function(req,res){
   });
 });
 
+userRouteId.put(function(req,res){
+  TempUser.findById(req.params.id, function(err, user){
+    if(err){
+      res.send(500).send(err);
+    }else if(user == undefined){
+      res.send(404).send({message:"User Does Not Exist"});
+    }else{
+      bcrypt.hash(req.body.password, saltRounds, function(err, hash) {
+        TempUser.findByIdAndUpdate(req.params.id,{
+          emailid: req.body.emailid,
+          username: req.body.username,
+          data: req.body.data,
+          password: hash
+        },function(err,userc){
+          if(err)
+            res.status(500).send(err);
+          else{
+            TempUser.findById(req.params.id,function(err,userchanged){
+              if(err)
+                res.status(500).send(err);
+              else
+                res.status(200).send({message:'User Updated', data : userchanged});
+            });
+          }
+        });
+      });
+    }
+  });
+});
+
 var passwordRoute = router.route('/password/');
 
 passwordRoute.post(function(req,res){
