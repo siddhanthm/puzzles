@@ -643,11 +643,15 @@ puzzleControllers.controller('editUserCtrl', ['$scope', '$http',  '$window' ,'$l
 		return courses_list;
 	}
 
-	var postData = function(dataToPost){
+	/**
+	* PUT the data into the backend
+	* INPUT: dataToPut The data we want to save in the backend. 
+	*/
+	var postData = function(dataToPut){
 		$http({
 		    method  : 'PUT',
 		    url     : baseURL + "/" + $routeParams.id,
-		    data    : $.param($scope.editUser), //forms user object
+		    data    : $.param(dataToPut), //forms user object
 		    headers : {'Content-Type': 'application/x-www-form-urlencoded'} 
 		}).success(function(putdata){
 		}).error(function(err){
@@ -655,6 +659,9 @@ puzzleControllers.controller('editUserCtrl', ['$scope', '$http',  '$window' ,'$l
 		});
 	}
 
+	/**
+	* Gets the updated information from the backend and prepopulates the fields in the form.
+	*/
 	var userURL = baseURL + "/" + $routeParams.id + "/";
 	$http.get(userURL).success(function(userData){
 		$scope.editUser = userData.data;
@@ -674,6 +681,10 @@ puzzleControllers.controller('editUserCtrl', ['$scope', '$http',  '$window' ,'$l
 		$scope.courses = listFormat(editData.education.courses);
 	});
 
+	/**
+	* Save the modified information from the front-end of basic information page and pushes the changes to the backend
+	* Ensures that all the feilds are filled.
+	*/
 	$scope.registerBasic = function(){
 		editData.name = $scope.name;
 		editData.phonenumber = $scope.phonenumber;
@@ -689,6 +700,10 @@ puzzleControllers.controller('editUserCtrl', ['$scope', '$http',  '$window' ,'$l
 			$scope.message = "Please fill in all the required information";
 	}
 
+	/**
+	* Save the modified information from the front-end of education page and pushes the changes to the backend
+	* Ensures that all the feilds are filled.
+	*/
 	$scope.registerEducation = function(){
 		editData.education.name = $scope.uniname;
 		editData.education.major = $scope.major;
@@ -772,9 +787,9 @@ puzzleControllers.controller('editUserCtrl', ['$scope', '$http',  '$window' ,'$l
 	}
 
 	/**
-	 * Saves the information from the front end and saves it into the data object.
+	 * Saves the information from the front end and pushes the modification to the backend.
 	 * Ensures that all the required fields are filled in correctly.
-	 * Navigates to the next form.
+	 * Navigates to edit profile page.
 	 */
 	$scope.registerInternship = function(){
 		var moveOn = true;
@@ -805,10 +820,10 @@ puzzleControllers.controller('editUserCtrl', ['$scope', '$http',  '$window' ,'$l
 	 		
 	}
 
-		/**
-	 * Saves the information from the front end and saves it into the data object.
+	/**
+	 * Saves the information from the front end and pushes the modification to the backend.
 	 * Ensures that all the required fields are filled in correctly.
-	 * Navigates to the next form
+	 * Navigates to the edit page
 	 */
 	$scope.registerProjects = function(){
 		var moveOn = true;
@@ -834,30 +849,44 @@ puzzleControllers.controller('editUserCtrl', ['$scope', '$http',  '$window' ,'$l
 	 	}
 	}
 
+	/**
+	 * Function dynamically navigates to edit internship page for the user
+	 */
 	$scope.editInternship = function(){
 		$location.path("/edit/" + $routeParams.id + "/internship");
 	}
 
+	/**
+	 * Function dynamically navigates to edit page without saving any modified data
+	 */
 	$scope.discardData = function(){
 		$location.path("/edit/" + $routeParams.id);
 	}
 
+	/**
+	 * Function dynamically navigates to edit basic information page for the user
+	 */
 	$scope.editBasic = function(){
 		$location.path("/edit/" + $routeParams.id + "/basic");
 	}
 
+	/**
+	 * Function dynamically navigates to edit education page for the user
+	 */
 	$scope.editEducation = function(){
 		$location.path("/edit/" + $routeParams.id + "/education");
 	}
 
+	/**
+	 * Function dynamically navigates to edit projects page for the user
+	 */
 	$scope.editProjects = function(){
 		$location.path("/edit/" + $routeParams.id + "/projects");
 	}
 
-	$scope.doneEditing = function(){
-		$location.path("/portfolio/" + $scope.username);
-	}
-
+	/**
+	 * Function dynamically navigates to the portfolio page of the user
+	 */
 	$scope.doneEditing = function(){
 		$location.path("/portfolio/" + $scope.username);
 	}
