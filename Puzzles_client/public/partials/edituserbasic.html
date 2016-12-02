@@ -1,0 +1,59 @@
+<div class="usereditPage">
+    <header class="row header">
+    <div class="small-12 small-centered header_content">
+      <div class="small-6 large-10 columns header_content_text title"><a class="a-title" href = "#/">Puzzles</a></div>
+    </div>
+  </header>
+  <div class="large-12 editintro">
+    <div class="row heading text-center">Edit Profile Details</div>
+    <div class="row form">
+      <form name = "myform" ng-submit="registerBasic()" novalidate>
+        <fieldset>
+          <!-- Name -->
+          Name: <font color="red">*</font>
+          <input type="text" name="name" 
+                placeholder="Name"
+                ng-model="name"
+                ng-required="true">
+          <p class="error validationerror text-center" ng-show="myform.name.$invalid && myform.name.$touched">
+          Please enter a name.
+          </p>
+          <!-- Phone Number -->
+          Phone Number: <font color="red">*</font>
+          <input type="text" name="phonenumber" 
+                placeholder="Phone Number"
+                ng-model="phonenumber"
+                ng-required="true">
+          <p class="error validationerror text-center" ng-show="myform.phonenumber.$invalid && myform.phonenumber.$touched">
+          Please enter a valid phone-number.
+          </p>
+          LinkedIn:
+          <input type="url" name="linkedin" 
+                placeholder="LinkedIn"
+                ng-model="linkedin">
+          <!-- Github -->
+          Github:
+          <input type="url" name="github" 
+                placeholder="Github"
+                ng-model="github">
+
+          <!-- Skills -->
+          Skills: <font color="red">*</font>
+          <input type="text" name="skills" 
+                placeholder="Enter Skills in comma seperated values"
+                ng-model="skills",
+                ng-required="true">
+          <p class="error validationerror text-center" ng-show="myform.skills.$invalid && myform.skills.$touched">
+          Please enter your skills in CSV format.
+          </p>
+        </fieldset>
+        
+        <div class="small-12 large-8 small-centered buttons">
+          <div class="small-12 large-6 columns buttonsbox"><a ng-click="discardData()" class="button alert">Discard Changes</a></div>
+          <div class="small-12 large-6 columns buttonsbox"><button type="submit" class="button success">Save</button></div>
+        </div>
+        <div class="small-12 text-center"><font color="red">{{message}}</font></div>
+      </form>
+    </div>
+  </div>
+</div>

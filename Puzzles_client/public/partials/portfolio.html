@@ -3,7 +3,7 @@
 		<div class="small-12 small-centered header_content">
 			<div class="small-6 large-6 columns header_content_text title">
 				<a href="#/">Puzzles</a>
-				<font color="red">{{error}}</font>
+				<a ng-click="switchStyle()" class="button" ng-show="ifSample" style="color:white; font-family:none;">Style 2</a>
 			</div>
 
 			<div class="large-1 other_info_text columns header_content_text text-center priya_ocd_right">
@@ -32,7 +32,7 @@
 				<h1>I am {{data["name"]}} <br> and I am a <span class="txt-rotate">Software Developer.</span></h1>
 				<div>
 					<a href = "#about" target="_self"><button class="button">Get to Know Me</button></a>
-					<a href = "#about" target="_self"><button class="button" ng-show=myPage>Update Info</button></a>
+					<button class="button" ng-click="updateInfo()" ng-show=myPage>Update Info</button>
 				</div>
 			</div>
 		</div>
@@ -43,7 +43,7 @@
 				<span style="color:rgb(0,0,0);">_</span>
 			</div>
 			<br><br> 
-			<center><p>I am a currently a senior in Computer Science at University of Illinois, Urbana Champaign. <br>The following are few ways via which you can get to know me better.</p></center>
+			<center><p>I am a currently a major in {{education["major"]}} at {{education["name"]}}, Urbana Champaign. <br>The following are few ways via which you can get to know me better.</p></center>
 		</div>
 		<div class="large-10 large-centered small-up-1 medium-up-2 large-up-3 about-outerbox">
 		  <div class="column">

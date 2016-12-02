@@ -1,0 +1,82 @@
+<div class="usereditPage">
+    <header class="row header">
+    <div class="small-12 small-centered header_content">
+      <div class="small-6 large-10 columns header_content_text title"><a class="a-title" href = "#/">Puzzles</a></div>
+    </div>
+  </header>
+  <div class="large-12 editintro">
+    <div class="row heading text-center">Edit Most Recent Education</div>
+    <div class="row form">
+      <form name = "myform" ng-submit="registerEducation()" novalidate>
+        <fieldset>
+          <!-- Name -->
+          University:<font color="red">*</font>
+          <input type="text" name="name" 
+                placeholder="Name"
+                ng-model="uniname"
+                ng-required="true">
+          <p class="error validationerror text-center" ng-show="myform.name.$invalid && myform.name.$touched">
+          Please enter the university name.
+          </p>
+          <!-- Major -->
+          Major:<font color="red">*</font>
+          <input type="text" name="major" 
+                placeholder="Major"
+                ng-model="major"
+                ng-required="true">
+          <p class="error validationerror text-center" ng-show="myform.major.$invalid && myform.major.$touched">
+          Please enter a valid major.
+          </p>
+          <!-- CGPA -->
+          CGPA:<font color="red">*</font>
+          <input type="text" name="cgpa" 
+                placeholder="CGPA"
+                ng-model="cgpa"
+                ng-required="true"
+                >
+          <p class="error validationerror text-center" ng-show="myform.cgpa.$invalid && myform.cgpa.$touched">
+          Please enter a valid CGPA.
+          </p>
+          <!-- Start Date -->
+          Start Date:<font color="red">*</font>
+          <br>
+          <datepicker date-format="MMMM d, y"> 
+            <input name="startDate" ng-model="startDate" placeholder="Start Date" type="text" ng-required = "true"/>
+          </datepicker>
+          <p class="error validationerror text-center" ng-show="myform.startDate.$invalid && myform.startDate.$touched">
+          Please enter a valid Start Date.
+          </p>
+
+          <!-- Graduation Date -->
+          Graduation Date:<font color="red">*</font>
+          <br>
+          <datepicker date-format="MMMM d, y"> 
+            <input name="graduationDate" ng-model="graduationDate" placeholder="Graduation Date" type="text" ng-required = "true"/>
+          </datepicker>
+          <p class="error validationerror text-center" ng-show="myform.graduationDate.$invalid && myform.graduationDate.$touched">
+          Please enter a valid Graduation Date.
+          </p>
+
+          <!-- Courses -->
+          Courses: <font color="red">*</font>
+          <input type="text" name="courses" 
+                placeholder="Add courses in comma seperated values"
+                ng-model="courses"
+                ng-required="true">
+          <p class="error validationerror text-center" ng-show="myform.courses.$invalid && myform.courses.$touched">
+          Please enter valid courses.
+          </p>
+
+          <br></br>
+        </fieldset>
+        
+        <div class="small-12 large-8 small-centered buttons">
+          <div class="small-12 large-6 columns buttonsbox"><a ng-click="discardData()" class="button alert">Discard Changes</a></div>
+          <div class="small-12 large-6 columns buttonsbox"><button type="submit" class="button success">Save</button></div>
+        </div>
+        <div class="small-12 text-center"><font color="red">{{message}}</font></div>
+      </form>
+    </div>
+    <br><br><br><br><br><br>
+  </div>
+</div>

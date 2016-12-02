@@ -4676,6 +4676,303 @@ body {
       display: inline-block; }
 
 /* line 579, ../../source_sass/_base.scss */
+.portfolio2Page .header {
+  background-color: white;
+  border-bottom: 2px solid #bfcad2;
+  min-height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 100vw;
+  z-index: 2; }
+  /* line 589, ../../source_sass/_base.scss */
+  .portfolio2Page .header .header_content {
+    height: 60px;
+    position: absolute; }
+    /* line 593, ../../source_sass/_base.scss */
+    .portfolio2Page .header .header_content .title {
+      font-family: 'Satisfy', cursive;
+      padding-left: 60px;
+      font-size: 2.3em;
+      color: #ff855c; }
+      @media screen and (max-width: 640px) {
+        /* line 593, ../../source_sass/_base.scss */
+        .portfolio2Page .header .header_content .title {
+          padding-left: 0px;
+          text-align: center; } }
+      /* line 603, ../../source_sass/_base.scss */
+      .portfolio2Page .header .header_content .title a {
+        color: #ff855c; }
+    /* line 608, ../../source_sass/_base.scss */
+    .portfolio2Page .header .header_content .other_info .button {
+      width: 100%; }
+    /* line 613, ../../source_sass/_base.scss */
+    .portfolio2Page .header .header_content a {
+      margin-bottom: 0px; }
+    /* line 616, ../../source_sass/_base.scss */
+    .portfolio2Page .header .header_content button {
+      margin-bottom: 0px; }
+    /* line 619, ../../source_sass/_base.scss */
+    .portfolio2Page .header .header_content .header_content_text {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%); }
+    /* line 624, ../../source_sass/_base.scss */
+    .portfolio2Page .header .header_content .other_info_text {
+      color: #929ead; }
+      @media screen and (max-width: 640px) {
+        /* line 624, ../../source_sass/_base.scss */
+        .portfolio2Page .header .header_content .other_info_text {
+          display: none; } }
+    /* line 632, ../../source_sass/_base.scss */
+    .portfolio2Page .header .header_content .priya_ocd_right {
+      text-align: right; }
+    /* line 636, ../../source_sass/_base.scss */
+    .portfolio2Page .header .header_content .priya_ocd_leftt {
+      text-align: left; }
+    /* line 640, ../../source_sass/_base.scss */
+    .portfolio2Page .header .header_content .other_info_text:hover {
+      color: #0fb5b3;
+      text-decoration: underline; }
+/* line 647, ../../source_sass/_base.scss */
+.portfolio2Page .pHome {
+  height: 100vh;
+  max-width: 100vw;
+  width: 100vw;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../data/images/bk.jpg"); }
+  /* line 657, ../../source_sass/_base.scss */
+  .portfolio2Page .pHome .innerBox {
+    padding-top: 16%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%; }
+    /* line 662, ../../source_sass/_base.scss */
+    .portfolio2Page .pHome .innerBox .name {
+      font-family: Helvetica,Arial,sans-serif;
+      color: aliceblue;
+      font-size: 60px;
+      font-weight: 300;
+      line-height: 1.3;
+      margin-left: 10%;
+      margin-right: 10%; }
+      /* line 670, ../../source_sass/_base.scss */
+      .portfolio2Page .pHome .innerBox .name .txt-rotate {
+        color: #0fb5b3;
+        font-size: 6rem; }
+      /* line 674, ../../source_sass/_base.scss */
+      .portfolio2Page .pHome .innerBox .name p {
+        font-size: 1.2rem; }
+/* line 681, ../../source_sass/_base.scss */
+.portfolio2Page .pExp {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 100px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../data/images/wbkg.jpg"); }
+  @media screen and (max-width: 640px) {
+    /* line 681, ../../source_sass/_base.scss */
+    .portfolio2Page .pExp {
+      padding-top: 50px;
+      padding-bottom: 50px; } }
+  /* line 696, ../../source_sass/_base.scss */
+  .portfolio2Page .pExp .exp-heading {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 50px;
+    color: white; }
+    @media screen and (max-width: 640px) {
+      /* line 696, ../../source_sass/_base.scss */
+      .portfolio2Page .pExp .exp-heading {
+        font-size: 40px; } }
+  /* line 707, ../../source_sass/_base.scss */
+  .portfolio2Page .pExp .exp-outerbox {
+    margin-top: 100px; }
+    @media screen and (max-width: 640px) {
+      /* line 707, ../../source_sass/_base.scss */
+      .portfolio2Page .pExp .exp-outerbox {
+        margin-top: 60px; } }
+    /* line 713, ../../source_sass/_base.scss */
+    .portfolio2Page .pExp .exp-outerbox .info {
+      background-color: rgba(0, 0, 0, 0.8);
+      border-radius: 6px;
+      color: white;
+      font-size: 2rem;
+      margin-top: 10px;
+      padding-top: 53px;
+      padding-bottom: 53px; }
+    /* line 723, ../../source_sass/_base.scss */
+    .portfolio2Page .pExp .exp-outerbox .work {
+      padding-top: 10px; }
+      @media screen and (max-width: 640px) {
+        /* line 725, ../../source_sass/_base.scss */
+        .portfolio2Page .pExp .exp-outerbox .work .column, .portfolio2Page .pExp .exp-outerbox .work .columns {
+          margin-top: 15px; } }
+      /* line 730, ../../source_sass/_base.scss */
+      .portfolio2Page .pExp .exp-outerbox .work .exp-box {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 6px;
+        width: 100%;
+        height: 125px;
+        padding: 30px; }
+        /* line 737, ../../source_sass/_base.scss */
+        .portfolio2Page .pExp .exp-outerbox .work .exp-box .exp-box-icon {
+          font-size: 45px; }
+        /* line 741, ../../source_sass/_base.scss */
+        .portfolio2Page .pExp .exp-outerbox .work .exp-box .exp-box-title {
+          font-size: 1.5em; }
+          /* line 743, ../../source_sass/_base.scss */
+          .portfolio2Page .pExp .exp-outerbox .work .exp-box .exp-box-title p {
+            font-size: 0.5em;
+            color: white; }
+        /* line 749, ../../source_sass/_base.scss */
+        .portfolio2Page .pExp .exp-outerbox .work .exp-box .exp-box-text {
+          display: none; }
+      /* line 753, ../../source_sass/_base.scss */
+      .portfolio2Page .pExp .exp-outerbox .work .exp-box:hover {
+        background-color: #0fb5b3;
+        color: aliceblue;
+        height: 125px; }
+        /* line 757, ../../source_sass/_base.scss */
+        .portfolio2Page .pExp .exp-outerbox .work .exp-box:hover .exp-box-title {
+          display: none; }
+        /* line 760, ../../source_sass/_base.scss */
+        .portfolio2Page .pExp .exp-outerbox .work .exp-box:hover .exp-box-text {
+          display: inline-block; }
+/* line 768, ../../source_sass/_base.scss */
+.portfolio2Page .pProject {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 100px;
+  background-image: url("../data/images/bbkg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+  @media screen and (max-width: 640px) {
+    /* line 768, ../../source_sass/_base.scss */
+    .portfolio2Page .pProject {
+      padding-top: 50px;
+      padding-bottom: 50px; } }
+  /* line 783, ../../source_sass/_base.scss */
+  .portfolio2Page .pProject .project-heading {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 50px;
+    color: black; }
+    @media screen and (max-width: 640px) {
+      /* line 783, ../../source_sass/_base.scss */
+      .portfolio2Page .pProject .project-heading {
+        font-size: 40px; } }
+  /* line 794, ../../source_sass/_base.scss */
+  .portfolio2Page .pProject .project-outerbox {
+    margin-top: 120px; }
+    @media screen and (max-width: 640px) {
+      /* line 794, ../../source_sass/_base.scss */
+      .portfolio2Page .pProject .project-outerbox {
+        margin-top: 60px; } }
+    @media screen and (max-width: 640px) {
+      /* line 800, ../../source_sass/_base.scss */
+      .portfolio2Page .pProject .project-outerbox .column, .portfolio2Page .pProject .project-outerbox .columns {
+        margin-top: 15px; } }
+  /* line 806, ../../source_sass/_base.scss */
+  .portfolio2Page .pProject .project-box {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    width: 100%;
+    min-height: 300px; }
+    /* line 813, ../../source_sass/_base.scss */
+    .portfolio2Page .pProject .project-box .project-box-title {
+      padding-top: 34%;
+      font-size: 1.5em; }
+    /* line 818, ../../source_sass/_base.scss */
+    .portfolio2Page .pProject .project-box .project-box-text {
+      padding-top: 25%;
+      padding-left: 40px;
+      padding-right: 40px;
+      display: none; }
+  /* line 826, ../../source_sass/_base.scss */
+  .portfolio2Page .pProject .project-box:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8); }
+    /* line 829, ../../source_sass/_base.scss */
+    .portfolio2Page .pProject .project-box:hover .project-box-title {
+      display: none; }
+    /* line 833, ../../source_sass/_base.scss */
+    .portfolio2Page .pProject .project-box:hover .project-box-text {
+      display: inline-block; }
+/* line 839, ../../source_sass/_base.scss */
+.portfolio2Page .pAbout {
+  min-height: 95vh;
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 100px;
+  background-image: url("../data/images/cbkg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+  @media screen and (max-width: 640px) {
+    /* line 839, ../../source_sass/_base.scss */
+    .portfolio2Page .pAbout {
+      padding-top: 50px;
+      padding-bottom: 50px; } }
+  /* line 854, ../../source_sass/_base.scss */
+  .portfolio2Page .pAbout .about-heading {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 50px;
+    color: white; }
+    @media screen and (max-width: 640px) {
+      /* line 854, ../../source_sass/_base.scss */
+      .portfolio2Page .pAbout .about-heading {
+        font-size: 40px; } }
+  /* line 865, ../../source_sass/_base.scss */
+  .portfolio2Page .pAbout .about-outerbox {
+    margin-top: 120px; }
+    @media screen and (max-width: 640px) {
+      /* line 865, ../../source_sass/_base.scss */
+      .portfolio2Page .pAbout .about-outerbox {
+        margin-top: 60px; } }
+    @media screen and (max-width: 640px) {
+      /* line 871, ../../source_sass/_base.scss */
+      .portfolio2Page .pAbout .about-outerbox .column, .portfolio2Page .pAbout .about-outerbox .columns {
+        margin-top: 15px; } }
+  /* line 877, ../../source_sass/_base.scss */
+  .portfolio2Page .pAbout .about-box {
+    font-size: 25px;
+    color: #777;
+    width: 100%;
+    min-height: 300px;
+    padding: 30px; }
+    /* line 883, ../../source_sass/_base.scss */
+    .portfolio2Page .pAbout .about-box p {
+      font-size: 20px; }
+    /* line 886, ../../source_sass/_base.scss */
+    .portfolio2Page .pAbout .about-box .about-box-icon {
+      font-size: 35px;
+      color: black; }
+  /* line 892, ../../source_sass/_base.scss */
+  .portfolio2Page .pAbout .about-box:hover b {
+    color: #0fb5b3; }
+  /* line 896, ../../source_sass/_base.scss */
+  .portfolio2Page .pAbout .about-box:hover .about-box-icon {
+    color: #0fb5b3; }
+
+/* line 903, ../../source_sass/_base.scss */
 .usereditPage {
   max-width: 100vw;
   width: 100vw;
@@ -4684,7 +4981,7 @@ body {
   background-position: center center;
   background-size: cover;
   background-image: url("../data/images/forms.jpg"); }
-  /* line 587, ../../source_sass/_base.scss */
+  /* line 911, ../../source_sass/_base.scss */
   .usereditPage .header {
     background-color: white;
     border-bottom: 2px solid #bfcad2;
@@ -4694,84 +4991,84 @@ body {
     width: 100%;
     max-width: 100vw;
     z-index: 2; }
-    /* line 597, ../../source_sass/_base.scss */
+    /* line 921, ../../source_sass/_base.scss */
     .usereditPage .header .header_content {
       height: 60px;
       position: absolute; }
-      /* line 601, ../../source_sass/_base.scss */
+      /* line 925, ../../source_sass/_base.scss */
       .usereditPage .header .header_content .title {
         font-family: 'Satisfy', cursive;
         padding-left: 60px;
         font-size: 2.3em;
         color: #ff855c; }
         @media screen and (max-width: 640px) {
-          /* line 601, ../../source_sass/_base.scss */
+          /* line 925, ../../source_sass/_base.scss */
           .usereditPage .header .header_content .title {
             padding-left: 0px;
             text-align: center; } }
-      /* line 615, ../../source_sass/_base.scss */
+      /* line 939, ../../source_sass/_base.scss */
       .usereditPage .header .header_content .other_info .button {
         width: 100%; }
-      /* line 620, ../../source_sass/_base.scss */
+      /* line 944, ../../source_sass/_base.scss */
       .usereditPage .header .header_content a {
         margin-bottom: 0px; }
-      /* line 623, ../../source_sass/_base.scss */
+      /* line 947, ../../source_sass/_base.scss */
       .usereditPage .header .header_content button {
         margin-bottom: 0px; }
-      /* line 626, ../../source_sass/_base.scss */
+      /* line 950, ../../source_sass/_base.scss */
       .usereditPage .header .header_content .header_content_text {
         position: relative;
         top: 50%;
         transform: translateY(-50%); }
-      /* line 631, ../../source_sass/_base.scss */
+      /* line 955, ../../source_sass/_base.scss */
       .usereditPage .header .header_content .other_info_text {
         color: #929ead; }
         @media screen and (max-width: 640px) {
-          /* line 631, ../../source_sass/_base.scss */
+          /* line 955, ../../source_sass/_base.scss */
           .usereditPage .header .header_content .other_info_text {
             display: none; } }
-      /* line 639, ../../source_sass/_base.scss */
+      /* line 963, ../../source_sass/_base.scss */
       .usereditPage .header .header_content .priya_ocd_right {
         text-align: right; }
-      /* line 643, ../../source_sass/_base.scss */
+      /* line 967, ../../source_sass/_base.scss */
       .usereditPage .header .header_content .priya_ocd_leftt {
         text-align: left; }
-      /* line 647, ../../source_sass/_base.scss */
+      /* line 971, ../../source_sass/_base.scss */
       .usereditPage .header .header_content .other_info_text:hover {
         color: #f07c17;
         text-decoration: underline; }
-  /* line 654, ../../source_sass/_base.scss */
+  /* line 978, ../../source_sass/_base.scss */
   .usereditPage .editintro {
     min-height: 100vh;
     padding: 50px;
     padding-top: 120px;
     padding-bottom: 120px; }
     @media screen and (max-width: 640px) {
-      /* line 654, ../../source_sass/_base.scss */
+      /* line 978, ../../source_sass/_base.scss */
       .usereditPage .editintro {
         padding-top: 80px;
         padding-bottom: 50px; } }
-    /* line 665, ../../source_sass/_base.scss */
+    /* line 989, ../../source_sass/_base.scss */
     .usereditPage .editintro .heading {
       font-size: 40px;
       color: #333; }
       @media screen and (max-width: 640px) {
-        /* line 665, ../../source_sass/_base.scss */
+        /* line 989, ../../source_sass/_base.scss */
         .usereditPage .editintro .heading {
           font-size: 30px; } }
-    /* line 673, ../../source_sass/_base.scss */
+    /* line 997, ../../source_sass/_base.scss */
     .usereditPage .editintro .form {
       background-color: white;
       padding: 20px;
       margin-top: 20px; }
-    /* line 681, ../../source_sass/_base.scss */
+    /* line 1005, ../../source_sass/_base.scss */
     .usereditPage .editintro .buttons .buttonsbox a, .usereditPage .editintro .buttons .buttonsbox button {
       width: 50%;
       position: relative;
       left: 50%;
       transform: translateX(-50%); }
 
-/* line 693, ../../source_sass/_base.scss */
+/* line 1017, ../../source_sass/_base.scss */
 .loginPage {
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -4784,7 +5081,7 @@ body {
   width: 100vw;
   margin-left: 0px;
   margin-right: 0px; }
-  /* line 694, ../../source_sass/_base.scss */
+  /* line 1018, ../../source_sass/_base.scss */
   .loginPage .header {
     background-color: white;
     border-bottom: 2px solid #bfcad2;
@@ -4794,57 +5091,57 @@ body {
     width: 100%;
     max-width: 100vw;
     z-index: 2; }
-    /* line 704, ../../source_sass/_base.scss */
+    /* line 1028, ../../source_sass/_base.scss */
     .loginPage .header .header_content {
       height: 60px;
       position: absolute; }
-      /* line 708, ../../source_sass/_base.scss */
+      /* line 1032, ../../source_sass/_base.scss */
       .loginPage .header .header_content .title {
         font-family: 'Satisfy', cursive;
         padding-left: 60px;
         font-size: 2.3em;
         color: #ff855c; }
-        /* line 714, ../../source_sass/_base.scss */
+        /* line 1038, ../../source_sass/_base.scss */
         .loginPage .header .header_content .title a {
           margin-bottom: 0px;
           color: #ff855c; }
         @media screen and (max-width: 640px) {
-          /* line 708, ../../source_sass/_base.scss */
+          /* line 1032, ../../source_sass/_base.scss */
           .loginPage .header .header_content .title {
             padding-left: 0px;
             text-align: center; } }
-      /* line 727, ../../source_sass/_base.scss */
+      /* line 1051, ../../source_sass/_base.scss */
       .loginPage .header .header_content .other_info .button {
         width: 100%; }
-      /* line 732, ../../source_sass/_base.scss */
+      /* line 1056, ../../source_sass/_base.scss */
       .loginPage .header .header_content a {
         margin-bottom: 0px; }
-      /* line 735, ../../source_sass/_base.scss */
+      /* line 1059, ../../source_sass/_base.scss */
       .loginPage .header .header_content button {
         margin-bottom: 0px; }
-      /* line 738, ../../source_sass/_base.scss */
+      /* line 1062, ../../source_sass/_base.scss */
       .loginPage .header .header_content .header_content_text {
         position: relative;
         top: 50%;
         transform: translateY(-50%); }
-      /* line 743, ../../source_sass/_base.scss */
+      /* line 1067, ../../source_sass/_base.scss */
       .loginPage .header .header_content .other_info_text {
         color: #929ead; }
         @media screen and (max-width: 640px) {
-          /* line 743, ../../source_sass/_base.scss */
+          /* line 1067, ../../source_sass/_base.scss */
           .loginPage .header .header_content .other_info_text {
             display: none; } }
-      /* line 751, ../../source_sass/_base.scss */
+      /* line 1075, ../../source_sass/_base.scss */
       .loginPage .header .header_content .priya_ocd_right {
         text-align: right; }
-      /* line 755, ../../source_sass/_base.scss */
+      /* line 1079, ../../source_sass/_base.scss */
       .loginPage .header .header_content .priya_ocd_leftt {
         text-align: left; }
-      /* line 759, ../../source_sass/_base.scss */
+      /* line 1083, ../../source_sass/_base.scss */
       .loginPage .header .header_content .other_info_text:hover {
         color: #f07c17;
         text-decoration: underline; }
-  /* line 777, ../../source_sass/_base.scss */
+  /* line 1101, ../../source_sass/_base.scss */
   .loginPage .outer_box {
     min-height: 20vh;
     padding: 30px;
@@ -4853,20 +5150,20 @@ body {
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
     background-color: white; }
-    /* line 786, ../../source_sass/_base.scss */
+    /* line 1110, ../../source_sass/_base.scss */
     .loginPage .outer_box .page_heading {
       font-size: 2.5em;
       padding: 10px;
       padding-bottom: 40px; }
-    /* line 792, ../../source_sass/_base.scss */
+    /* line 1116, ../../source_sass/_base.scss */
     .loginPage .outer_box a {
       color: white; }
-    /* line 795, ../../source_sass/_base.scss */
+    /* line 1119, ../../source_sass/_base.scss */
     .loginPage .outer_box .button {
       float: right;
       margin-top: 15px; }
 
-/* line 801, ../../source_sass/_base.scss */
+/* line 1125, ../../source_sass/_base.scss */
 .signupPage {
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -4878,7 +5175,7 @@ body {
   width: 100vw;
   margin-left: 0px;
   margin-right: 0px; }
-  /* line 802, ../../source_sass/_base.scss */
+  /* line 1126, ../../source_sass/_base.scss */
   .signupPage .header {
     background-color: white;
     border-bottom: 2px solid #bfcad2;
@@ -4888,57 +5185,57 @@ body {
     width: 100%;
     max-width: 100vw;
     z-index: 2; }
-    /* line 812, ../../source_sass/_base.scss */
+    /* line 1136, ../../source_sass/_base.scss */
     .signupPage .header .header_content {
       height: 60px;
       position: absolute; }
-      /* line 816, ../../source_sass/_base.scss */
+      /* line 1140, ../../source_sass/_base.scss */
       .signupPage .header .header_content .title {
         font-family: 'Satisfy', cursive;
         padding-left: 60px;
         font-size: 2.3em;
         color: #ff855c; }
-        /* line 822, ../../source_sass/_base.scss */
+        /* line 1146, ../../source_sass/_base.scss */
         .signupPage .header .header_content .title a {
           margin-bottom: 0px;
           color: #ff855c; }
         @media screen and (max-width: 640px) {
-          /* line 816, ../../source_sass/_base.scss */
+          /* line 1140, ../../source_sass/_base.scss */
           .signupPage .header .header_content .title {
             padding-left: 0px;
             text-align: center; } }
-      /* line 835, ../../source_sass/_base.scss */
+      /* line 1159, ../../source_sass/_base.scss */
       .signupPage .header .header_content .other_info .button {
         width: 100%; }
-      /* line 840, ../../source_sass/_base.scss */
+      /* line 1164, ../../source_sass/_base.scss */
       .signupPage .header .header_content a {
         margin-bottom: 0px; }
-      /* line 843, ../../source_sass/_base.scss */
+      /* line 1167, ../../source_sass/_base.scss */
       .signupPage .header .header_content button {
         margin-bottom: 0px; }
-      /* line 846, ../../source_sass/_base.scss */
+      /* line 1170, ../../source_sass/_base.scss */
       .signupPage .header .header_content .header_content_text {
         position: relative;
         top: 50%;
         transform: translateY(-50%); }
-      /* line 851, ../../source_sass/_base.scss */
+      /* line 1175, ../../source_sass/_base.scss */
       .signupPage .header .header_content .other_info_text {
         color: #929ead; }
         @media screen and (max-width: 640px) {
-          /* line 851, ../../source_sass/_base.scss */
+          /* line 1175, ../../source_sass/_base.scss */
           .signupPage .header .header_content .other_info_text {
             display: none; } }
-      /* line 859, ../../source_sass/_base.scss */
+      /* line 1183, ../../source_sass/_base.scss */
       .signupPage .header .header_content .priya_ocd_right {
         text-align: right; }
-      /* line 863, ../../source_sass/_base.scss */
+      /* line 1187, ../../source_sass/_base.scss */
       .signupPage .header .header_content .priya_ocd_leftt {
         text-align: left; }
-      /* line 867, ../../source_sass/_base.scss */
+      /* line 1191, ../../source_sass/_base.scss */
       .signupPage .header .header_content .other_info_text:hover {
         color: #f07c17;
         text-decoration: underline; }
-  /* line 884, ../../source_sass/_base.scss */
+  /* line 1208, ../../source_sass/_base.scss */
   .signupPage .outer_box {
     min-height: 20vh;
     padding: 30px;
@@ -4947,20 +5244,20 @@ body {
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
     background-color: white; }
-    /* line 893, ../../source_sass/_base.scss */
+    /* line 1217, ../../source_sass/_base.scss */
     .signupPage .outer_box .page_heading {
       font-size: 2.5em;
       padding: 10px;
       padding-bottom: 40px; }
-    /* line 899, ../../source_sass/_base.scss */
+    /* line 1223, ../../source_sass/_base.scss */
     .signupPage .outer_box a {
       color: white; }
-    /* line 902, ../../source_sass/_base.scss */
+    /* line 1226, ../../source_sass/_base.scss */
     .signupPage .outer_box .button {
       float: right;
       margin-top: 15px; }
 
-/* line 910, ../../source_sass/_base.scss */
+/* line 1234, ../../source_sass/_base.scss */
 .baduserPage .header {
   background-color: white;
   border-bottom: 2px solid #bfcad2;
@@ -4970,36 +5267,36 @@ body {
   width: 100%;
   max-width: 100vw;
   z-index: 2; }
-  /* line 920, ../../source_sass/_base.scss */
+  /* line 1244, ../../source_sass/_base.scss */
   .baduserPage .header .header_content {
     height: 60px;
     position: absolute; }
-    /* line 924, ../../source_sass/_base.scss */
+    /* line 1248, ../../source_sass/_base.scss */
     .baduserPage .header .header_content .title {
       font-family: 'Satisfy', cursive;
       padding-left: 60px;
       font-size: 2.3em;
       color: #ff855c; }
       @media screen and (max-width: 640px) {
-        /* line 924, ../../source_sass/_base.scss */
+        /* line 1248, ../../source_sass/_base.scss */
         .baduserPage .header .header_content .title {
           padding-left: 0px;
           text-align: center; } }
-      /* line 934, ../../source_sass/_base.scss */
+      /* line 1258, ../../source_sass/_base.scss */
       .baduserPage .header .header_content .title a {
         color: #ff855c; }
-    /* line 939, ../../source_sass/_base.scss */
+    /* line 1263, ../../source_sass/_base.scss */
     .baduserPage .header .header_content a {
       margin-bottom: 0px; }
-    /* line 942, ../../source_sass/_base.scss */
+    /* line 1266, ../../source_sass/_base.scss */
     .baduserPage .header .header_content button {
       margin-bottom: 0px; }
-    /* line 945, ../../source_sass/_base.scss */
+    /* line 1269, ../../source_sass/_base.scss */
     .baduserPage .header .header_content .header_content_text {
       position: relative;
       top: 50%;
       transform: translateY(-50%); }
-/* line 953, ../../source_sass/_base.scss */
+/* line 1277, ../../source_sass/_base.scss */
 .baduserPage .buHome {
   height: 100vh;
   max-width: 100vw;
@@ -5009,13 +5306,13 @@ body {
   background-position: center center;
   background-size: cover;
   background-image: url("../data/images/bbb.jpg"); }
-  /* line 963, ../../source_sass/_base.scss */
+  /* line 1287, ../../source_sass/_base.scss */
   .baduserPage .buHome .innerBox {
     padding-top: 16%;
     background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
     width: 100%; }
-    /* line 968, ../../source_sass/_base.scss */
+    /* line 1292, ../../source_sass/_base.scss */
     .baduserPage .buHome .innerBox .name {
       font-family: Helvetica,Arial,sans-serif;
       padding-top: 10%;
@@ -5025,7 +5322,7 @@ body {
       line-height: 1.3;
       margin-left: 34%;
       margin-right: 34%; }
-      /* line 977, ../../source_sass/_base.scss */
+      /* line 1301, ../../source_sass/_base.scss */
       .baduserPage .buHome .innerBox .name .txt-rotate {
         color: #0fb5b3; }
 

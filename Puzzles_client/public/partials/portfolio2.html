@@ -1,0 +1,133 @@
+<div class="portfolio2Page">
+	<header class="row header">
+		<div class="small-12 small-centered header_content">
+			<div class="small-6 large-6 columns header_content_text title">
+				<a href="#/">Puzzles</a>
+				<a ng-click="switchStyle()" class="button" ng-show="ifSample" style="color:white; font-family:none;">Style 1</a>
+			</div>
+
+			<div class="large-1 other_info_text columns header_content_text text-center priya_ocd_right">
+				<a class="other_info_text" href = "#home" target="_self">Home</a>
+			</div>
+
+			<div class="large-1	other_info_text columns header_content_text text-center priya_ocd_left">
+				<a class="other_info_text" href = "#exp" target="_self">Experience</a>
+			</div>
+
+			<div class="large-1	other_info_text columns header_content_text text-center priya_ocd_left">
+				<a class="other_info_text" href = "#project" target="_self">Projects</a>
+			</div>
+
+			<div class="large-1	other_info_text columns header_content_text text-center priya_ocd_left">
+				<a class="other_info_text" href = "#about" target="_self">Contact</a>
+			</div>
+
+			<div class="small-6 large-2 columns header_content_text other_info">  
+        		<div class="small-12 columns"><button class="hollow button" ng-click="logout()">{{logged}}</button></div>
+      		</div>
+		</div>
+	</header>
+	<div class="large-12 pHome" id = "home">
+		<div class="innerBox">
+			<div class="name">
+				<span class="txt-rotate">{{data["name"]}}</span>
+				<br><br>
+				<center>
+					<p>
+						I am currently a major in {{education["major"]}} at {{education["name"]}}, graduating on {{education["endDate"]}}. My current GPA is {{education["CGPA"]}} and the major courses I have taken in college are {{courses}} My strongest languages are {{ skills }}
+					</p>
+				</center>
+				<div class="text-center">
+					<button class="button" ng-click="updateInfo()" ng-show=myPage>Update Info</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="large-12 row pExp" id = "exp" ng-hide = hideInternship>
+		<div class="large-12 large-centered text-center exp-heading">
+			Work Experience
+		</div>
+		
+		<div class="large-10 large-centered exp-outerbox">
+			<div class="large-6 columns info">
+				<i>The only source of knowlege is experience. <br>
+				~ Albert Einstein</i>
+				<br><br>
+				The following are the companies I have thankfully gained experience at.
+			</div>
+			<div class="large-6 columns">
+				<div class="column work" ng-repeat="exp in internship">
+					<div class="exp-box">
+				    	<div class="large-12 text-center exp-box-title">
+				    		{{exp["company"]}}
+				    		<p>({{exp["startDate"]}} to {{exp["endDate"]}})</p>
+				    	</div>
+				    	<div class="large-12 text-center exp-box-text">
+				    		{{exp["description"]}}
+				    	</div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="large-12 row pProject" id = "project" ng-hide = hideProject>
+		<div class="large-12 large-centered text-center project-heading">
+			My Projects
+		</div>
+		<div class="large-10 large-centered small-up-1 medium-up-2 large-up-3 project-outerbox">
+		  <div class="column" ng-show = showOneP>
+		    <div class="project-box">
+		    	<div class="large-12 text-center project-box-title">
+		    		{{project[0]["name"]}}
+		    	</div>
+		    	<div class="large-12 text-center project-box-text">
+		    		{{ project[0]["description"] }}</div>
+		    </div>
+		  </div>
+		  <div class="column" ng-show = showTwoP>
+		    <div class="project-box">
+		    	<div class="large-12 text-center project-box-title">
+		    		{{project[1]["name"]}}
+		    	</div>
+		    	<div class="large-12 text-center project-box-text">
+		    		{{ project[1]["description"] }}</div>
+		    </div>
+		  </div>
+		  <div class="column" ng-show = showThreeP>
+		    <div class="project-box">
+		    	<div class="large-12 text-center project-box-title">
+		    		{{project[2]["name"]}}
+		    	</div>
+		    	<div class="large-12 text-center project-box-text">
+		    		{{ project[2]["description"] }}</div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+	<div class="large-12 row pAbout" id = "about">
+		<div class="large-12 large-centered text-center about-heading">
+			Stay in touch!
+		</div>
+		<div class="large-10 large-centered small-up-1 medium-up-2 large-up-3 about-outerbox">
+		    <div class="about-box large-12">
+		    	<div class="large-12 about-box-icon text-center">
+		    		<i class="fa fa-heart" aria-hidden="true"></i>
+		    	</div>
+		    	<center>
+			    	<p>
+			    		<i>Please feel free to contact me. It's always a great pleasure to talk to new people.</i>
+			    	</p>
+			    </center>
+			    <br>
+		    	<div class="column large-6 text-center">
+				    <b>Phone Number : </b> <span>{{data["phonenumber"]}}</span> <br>
+				    <b ng-hide = hideLinkedin><i class="fa fa-linkedin" aria-hidden="true"></i> : </b> <span ng-hide = hideLinkedin> {{data["linkedin"]}} </span> 
+			    </div>
+			    <div class="column large-6 text-center">
+			    	<b>Email : </b><span>{{data["emailid"]}}</span> <br>
+				    <b ng-hide = hideGithub><i class="fa fa-github" aria-hidden="true"></i> : </b> <span ng-hide = hideGithub>  {{data["github"]}} </span>
+				</div>
+		    </div>
+		</div>
+	</div>
+</div>

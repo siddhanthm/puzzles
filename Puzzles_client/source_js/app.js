@@ -6,6 +6,10 @@ app.config(['$routeProvider', function($routeProvider) {
     templateUrl: './partials/home.html',
     controller: 'homeCtrl'
   }).
+  when('/portfolio2/:id', {
+    templateUrl: './partials/portfolio2.html',
+    controller: 'portfolio2Ctrl'
+  }).
   when('/portfolio/:id', {
     templateUrl: './partials/portfolio.html',
     controller: 'portfolioCtrl'
@@ -37,6 +41,21 @@ app.config(['$routeProvider', function($routeProvider) {
   when('/baduser', {
     templateUrl: './partials/baduser.html',
     controller: 'portfolioCtrl'
+  }).when('/edit/:id', {
+    templateUrl: './partials/edituser.html',
+    controller: 'editUserCtrl'
+  }).when('/edit/:id/basic', {
+    templateUrl: './partials/edituserbasic.html',
+    controller: 'editUserCtrl'
+  }).when('/edit/:id/education', {
+    templateUrl: './partials/editusereducation.html',
+    controller: 'editUserCtrl'
+  }).when('/edit/:id/internship', {
+    templateUrl: './partials/edituserinternship.html',
+    controller: 'editUserCtrl'
+  }).when('/edit/:id/projects', {
+    templateUrl: '/partials/edituserprojects.html',
+    controller: 'editUserCtrl'
   }).
   otherwise({
     redirectTo: '/'
