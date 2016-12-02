@@ -5,6 +5,9 @@ In this project we wish to create a full-stack website in which any user can log
 
 
 Cite:
+
 The start up code taken from:
+
 https://github.com/uiuc-web-programming/mp4_client_starter
+
 https://github.com/uiuc-web-programming/mp4_server_starter
